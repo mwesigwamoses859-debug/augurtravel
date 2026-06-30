@@ -1,0 +1,18 @@
+[
+  {
+    "id": "BK-1001",
+    "customerId": "CUST-001",
+    "service": "Mountain Gorilla Trekking",
+    "channel": "WhatsApp",
+    "status": "quote sent",
+    "createdAt": "2026-05-29"
+  },
+  {
+    "id": "BK-1002",
+    "customerId": "CUST-002",
+    "service": "Airport Transfer",
+    "channel": "Website",
+    "status": "confirmed",
+    "createdAt": "2026-05-29"
+  }
+]

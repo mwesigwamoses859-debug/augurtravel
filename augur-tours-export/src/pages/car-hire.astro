@@ -1,0 +1,10 @@
+---
+import MainLayout from "@/layouts/main.astro";
+import { Navigation } from "@/components/Navigation";
+import { CarHireSystem } from "@/components/CarHireSystem";
+---
+<MainLayout title="Car Hire System | Augur Tours">
+  <Navigation client:load />
+  <section class="hero"><h1>Car Hire System</h1><p>Outsourced partner model with quote requests and admin tracking.</p></section>
+  <section class="section"><CarHireSystem /></section>
+</MainLayout>

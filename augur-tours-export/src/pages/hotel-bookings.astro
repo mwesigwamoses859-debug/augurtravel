@@ -1,0 +1,13 @@
+---
+import MainLayout from "@/layouts/main.astro";
+import { Navigation } from "@/components/Navigation";
+import { HotelsList } from "@/components/HotelsList";
+import { HotelBookingForm } from "@/components/HotelBookingForm";
+import { AvailabilityCalendar } from "@/components/AvailabilityCalendar";
+---
+<MainLayout title="Hotel Booking System | Augur Tours">
+  <Navigation client:load />
+  <section class="hero"><h1>Hotel Booking System</h1><p>Browse hotels, request quotes, and manage bookings.</p></section>
+  <section class="section"><HotelsList /></section>
+  <section class="section grid"><HotelBookingForm client:load /><AvailabilityCalendar /></section>
+</MainLayout>

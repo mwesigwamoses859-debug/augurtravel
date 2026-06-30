@@ -1,0 +1,43 @@
+---
+import MainLayout from "@/layouts/main.astro";
+import { Navigation } from "@/components/Navigation";
+import { HeroSlider } from "@/components/HeroSlider";
+import { About } from "@/components/About";
+import { ServicesOverview } from "@/components/ServicesOverview";
+import { UgandaInteractiveMap } from "@/components/UgandaInteractiveMap";
+import { ValuesSection } from "@/components/ValuesSection";
+import { PartnersDisplay } from "@/components/PartnersDisplay";
+import { TrustBadges } from "@/components/TrustBadges";
+import { TravelAssistant } from "@/components/TravelAssistant";
+import { LocationMap } from "@/components/LocationMap";
+import { ContactForm } from "@/components/ContactForm";
+import { CurrencyConverter } from "@/components/CurrencyConverter";
+import { TripPlanner } from "@/components/TripPlanner";
+import { ReviewsSection } from "@/components/ReviewsSection";
+import { SpecialOffers } from "@/components/SpecialOffers";
+import { NewsletterPopup } from "@/components/NewsletterPopup";
+import { Footer } from "@/components/Footer";
+---
+<MainLayout title="Augur Tours & Travel Limited">
+  <Navigation client:load />
+  <HeroSlider client:load />
+  <section class="section">
+    <ServicesOverview />
+  </section>
+  <section class="section grid">
+    <About />
+    <UgandaInteractiveMap />
+    <CurrencyConverter />
+    <TripPlanner />
+    <TravelAssistant />
+    <LocationMap />
+    <ContactForm />
+    <NewsletterPopup />
+  </section>
+  <section class="section"><ValuesSection /></section>
+  <section class="section"><PartnersDisplay /></section>
+  <section class="section"><TrustBadges /></section>
+  <section class="section"><ReviewsSection /></section>
+  <section class="section"><SpecialOffers /></section>
+  <Footer />
+</MainLayout>

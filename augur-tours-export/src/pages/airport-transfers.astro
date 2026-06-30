@@ -1,0 +1,10 @@
+---
+import MainLayout from "@/layouts/main.astro";
+import { Navigation } from "@/components/Navigation";
+import { AirportTransferBooking } from "@/components/AirportTransferBooking";
+---
+<MainLayout title="Airport Transfers | Augur Tours">
+  <Navigation client:load />
+  <section class="hero"><h1>Airport Transfer System</h1><p>Entebbe Airport Pickups | Professional Drivers | Reliable Service</p></section>
+  <section class="section"><AirportTransferBooking client:load /></section>
+</MainLayout>

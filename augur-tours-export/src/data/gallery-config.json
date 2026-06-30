@@ -1,0 +1,5 @@
+[
+  { "src": "/gallery/safari.jpg", "category": "Safari", "caption": "Unforgettable Safari Adventures" },
+  { "src": "/gallery/wildlife.jpg", "category": "Wildlife", "caption": "Mountain Gorilla Trekking" },
+  { "src": "/gallery/nature.jpg", "category": "Nature", "caption": "Discover East Africa" }
+]

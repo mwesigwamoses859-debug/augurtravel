@@ -1,0 +1,20 @@
+[
+  {
+    "id": "kampala-business-stay",
+    "name": "Kampala Business Stay",
+    "region": "Kampala",
+    "roomTypes": ["Single", "Double", "Executive"],
+    "amenities": ["Wi-Fi", "Airport pickup", "Conference access"],
+    "pricingModel": "Ask for a quote",
+    "status": "active"
+  },
+  {
+    "id": "safari-gateway-lodge",
+    "name": "Safari Gateway Lodge",
+    "region": "Western Uganda",
+    "roomTypes": ["Double", "Family"],
+    "amenities": ["Safari access", "Tour desk", "Meal plans"],
+    "pricingModel": "Ask for a quote",
+    "status": "active"
+  }
+]

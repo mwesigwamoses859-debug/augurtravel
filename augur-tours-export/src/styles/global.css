@@ -1,0 +1,75 @@
+:root {
+  --green-950: #102d21;
+  --green-800: #23543a;
+  --gold: #f2b742;
+  --cream: #fff8e7;
+  --linen: #f7edd8;
+  --ink: #201d18;
+  --muted: #6b6253;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  min-height: 100vh;
+}
+
+.section {
+  padding: 72px clamp(18px, 5vw, 70px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  padding: 22px;
+  background: #fffdf7;
+  border: 1px solid rgba(16, 45, 33, 0.14);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 46px rgba(16, 45, 33, 0.12);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  color: var(--green-950);
+  font-weight: 900;
+  background: var(--gold);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 66vh;
+  padding: 140px clamp(18px, 5vw, 70px) 80px;
+  color: #fffdf7;
+  background:
+    linear-gradient(90deg, rgba(16,45,33,.95), rgba(16,45,33,.48)),
+    url("/gallery/safari.jpg") center/cover;
+}
+
+.hero h1 {
+  max-width: 900px;
+  font-size: clamp(2.4rem, 6vw, 5.6rem);
+  line-height: 1;
+}

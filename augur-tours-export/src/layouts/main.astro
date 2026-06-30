@@ -1,0 +1,18 @@
+---
+import "../styles/global.css";
+const { title = "Augur Tours & Travel Limited" } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content="Augur Tours & Travel Limited booking platform for East and Central Africa tourism." />
+  </head>
+  <body>
+    <div class="shell">
+      <slot />
+    </div>
+  </body>
+</html>

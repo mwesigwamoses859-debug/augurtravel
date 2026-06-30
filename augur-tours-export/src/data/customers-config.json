@@ -1,0 +1,9 @@
+[
+  {
+    "id": "CUST-001",
+    "name": "Demo Traveler",
+    "email": "traveler@example.com",
+    "loyaltyPoints": 1250,
+    "preferences": ["Gorilla trekking", "Executive travel", "WhatsApp updates"]
+  }
+]

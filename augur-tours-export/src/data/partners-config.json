@@ -1,0 +1,50 @@
+[
+  {
+    "name": "impact and innovation development center",
+    "logo": "/logos/impact-innovation.jpg",
+    "services": ["Corporate staff transportation", "Airport transfers", "Cargo delivery"],
+    "status": "Active"
+  },
+  {
+    "name": "Trans cultural psycological organization",
+    "logo": "/logos/tpo-uganda.jpg",
+    "services": ["Staff transportation", "Cargo delivery"],
+    "status": "Active"
+  },
+  {
+    "name": "Uganda Breweries Limited",
+    "logo": "/logos/uganda-breweries.jpg",
+    "services": ["Staff transport", "Airport transfer services"],
+    "status": "Active"
+  },
+  {
+    "name": "Quality Chemicals Limited",
+    "logo": "/logos/quality-chemicals.webp",
+    "services": ["Staff transport"],
+    "status": "Active"
+  },
+  {
+    "name": "Joint Clinical Research Center",
+    "logo": "/logos/jcrc.png",
+    "services": ["Staff transport", "Cargo delivery"],
+    "status": "Active"
+  },
+  {
+    "name": "Britam Insurance Uganda",
+    "logo": "/logos/britam.png",
+    "services": ["Staff transport"],
+    "status": "Active"
+  },
+  {
+    "name": "Infectious Disease Institute",
+    "logo": "/logos/idi.png",
+    "services": ["Staff transport"],
+    "status": "Active"
+  },
+  {
+    "name": "Development Link Consult",
+    "logo": "/logos/development-links.png",
+    "services": ["Consultancy transport services"],
+    "status": "Active"
+  }
+]

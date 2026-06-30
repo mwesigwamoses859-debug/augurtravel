@@ -1,0 +1,12 @@
+---
+import MainLayout from "@/layouts/main.astro";
+import { Navigation } from "@/components/Navigation";
+import { CustomerDashboard } from "@/components/CustomerDashboard";
+import { DataProtectionNotice } from "@/components/DataProtectionNotice";
+---
+<MainLayout title="Customer Dashboard | Augur Tours">
+  <Navigation client:load />
+  <section class="hero"><h1>Customer Portal</h1><p>Login, booking history, loyalty points, and saved preferences.</p></section>
+  <section class="section"><CustomerDashboard /></section>
+  <section class="section"><DataProtectionNotice /></section>
+</MainLayout>

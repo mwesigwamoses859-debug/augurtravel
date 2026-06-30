@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wild Tours | Augur Tours</title>
+  <meta name="description" content="Explore Uganda and Rwanda wild tours, national parks, natural destinations, sanctuaries, and cultural sites with Augur Tours.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home"><img class="brand-logo" src="assets/augur-logo.webp" alt="" aria-hidden="true"><span class="brand-text"><strong>Augur Tours</strong><small>East &amp; Central Africa</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="index.html#home">Home</a>
+      <a href="about.html">About</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">Services <span aria-hidden="true">v</span></button>
+        <div class="dropdown-menu" aria-label="Services">
+          <a href="services.html"><strong>All Services</strong><small>Car hire, transfers, hotels, and Rwanda tours.</small></a>
+          <a href="hotels.html"><strong>Hotel Bookings</strong><small>Browse hotels and request quotes.</small></a>
+          <a href="airport-transfers.html"><strong>Airport Transfers</strong><small>Entebbe airport pickups and professional drivers.</small></a>
+          <a href="car-hire.html"><strong>Car Hire</strong><small>Flexible vehicles for tours, business, and NGOs.</small></a>
+          <a href="rwanda-tours.html"><strong>Rwanda Tours</strong><small>Kigali, Volcanoes, Lake Kivu, and cross-border plans.</small></a>
+          <a href="packages.html"><strong>Tour Packages</strong><small>Gorillas, parks, culture, and regional tours.</small></a>
+        </div>
+      </div>
+      <a class="wild-link is-current" href="wild-tours.html">Wild Tours <b>NEW</b></a>
+      <a href="destinations.html">Destinations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="safari-gallery.html">Safari Gallery</a>
+      <a href="customer.html">Create Account</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero wild-hero">
+      <div>
+        <p class="eyebrow">Wild Tours</p>
+        <h1>Discover East Africa</h1>
+        <p>20+ breathtaking destinations. Click any pin or destination name to explore the site details.</p>
+      </div>
+    </section>
+
+    <section class="section map-section wild-map-section" id="map">
+      <div class="section-heading">
+        <p class="eyebrow">Live Interactive Map</p>
+        <h2>Uganda and Rwanda destinations</h2>
+        <p>Click any marker to view destination details, highlights, and booking options.</p>
+      </div>
+
+      <div class="map-layout">
+        <div class="map-panel">
+          <div class="country-tabs" role="tablist" aria-label="Country filters">
+            <button type="button" class="is-active" data-country="both"><span>All</span><strong>Both</strong><em>(20)</em></button>
+            <button type="button" data-country="uganda"><span>UG</span><strong>Uganda</strong><em>(14)</em></button>
+            <button type="button" data-country="rwanda"><span>RW</span><strong>Rwanda</strong><em>(6)</em></button>
+          </div>
+
+          <div class="category-tabs" aria-label="Destination categories">
+            <button class="is-active" type="button" data-category="all">All (20)</button>
+            <button type="button" data-category="parks">Parks (13)</button>
+            <button type="button" data-category="natural">Natural (3)</button>
+            <button type="button" data-category="sanctuary">Sanctuary (1)</button>
+            <button type="button" data-category="cultural">Cultural (3)</button>
+          </div>
+
+          <div class="map-box">
+            <div class="map-topline">
+              <strong>Live Map View</strong>
+              <span>Click any marker to view details</span>
+            </div>
+            <div class="map-canvas" aria-label="Live map view">
+              <button class="marker marker-1 uganda parks is-selected" type="button" data-destination="bwindi" aria-label="Bwindi Impenetrable National Park"></button>
+              <button class="marker marker-2 uganda parks" type="button" data-destination="murchison" aria-label="Murchison Falls National Park"></button>
+              <button class="marker marker-3 uganda parks" type="button" data-destination="queen" aria-label="Queen Elizabeth National Park"></button>
+              <button class="marker marker-4 uganda natural" type="button" data-destination="bunyonyi" aria-label="Lake Bunyonyi"></button>
+              <button class="marker marker-5 rwanda parks" type="button" data-destination="volcanoes" aria-label="Volcanoes National Park"></button>
+              <button class="marker marker-6 rwanda cultural" type="button" data-destination="kigali" aria-label="Kigali City Tour"></button>
+              <button class="marker marker-7 uganda sanctuary" type="button" data-destination="zziwa" aria-label="Ziwa Rhino Sanctuary"></button>
+              <button class="marker marker-8 uganda natural" type="button" data-destination="jinja" aria-label="Jinja Source of the Nile"></button>
+              <button class="marker marker-9 uganda parks" type="button" data-destination="kidepo" aria-label="Kidepo Valley National Park"></button>
+              <button class="marker marker-10 uganda parks" type="button" data-destination="kibale" aria-label="Kibale Forest National Park"></button>
+              <button class="marker marker-11 uganda parks" type="button" data-destination="mburo" aria-label="Lake Mburo National Park"></button>
+              <button class="marker marker-12 uganda parks" type="button" data-destination="rwenzori" aria-label="Rwenzori Mountains National Park"></button>
+              <button class="marker marker-13 uganda parks" type="button" data-destination="elgon" aria-label="Mount Elgon National Park"></button>
+              <button class="map-control plus" type="button">+</button>
+              <button class="map-control minus" type="button">-</button>
+              <span class="leaflet-credit">Leaflet | OpenStreetMap contributors</span>
+            </div>
+          </div>
+
+          <div class="destination-pills" aria-label="Destination list">
+            <button class="is-selected uganda parks" type="button" data-destination="bwindi">Bwindi Gorilla Trekking</button>
+            <button class="uganda parks" type="button" data-destination="murchison">Murchison Falls Safari</button>
+            <button class="uganda parks" type="button" data-destination="queen">Queen Elizabeth Park</button>
+            <button class="uganda parks" type="button" data-destination="kidepo">Kidepo Valley National Park</button>
+            <button class="uganda parks" type="button" data-destination="kibale">Kibale Chimpanzee</button>
+            <button class="uganda parks" type="button" data-destination="mburo">Lake Mburo National Park</button>
+            <button class="uganda parks" type="button" data-destination="rwenzori">Rwenzori Mountains</button>
+            <button class="uganda parks" type="button" data-destination="elgon">Mount Elgon & Sipi Falls</button>
+            <button class="uganda natural" type="button" data-destination="bunyonyi">Lake Bunyonyi</button>
+            <button class="uganda natural" type="button" data-destination="jinja">Jinja Water Sports</button>
+            <button class="uganda sanctuary" type="button" data-destination="zziwa">Ziwa Rhino Sanctuary</button>
+            <button class="rwanda parks" type="button" data-destination="volcanoes">Rwanda Volcanoes</button>
+            <button class="rwanda cultural" type="button" data-destination="kigali">Kigali City Tour</button>
+          </div>
+        </div>
+
+        <aside class="map-aside">
+          <article class="destination-detail" id="destination-detail">
+            <img id="destination-detail-image" src="assets/safari/gorilla.webp" alt="Selected destination">
+            <p class="eyebrow" id="destination-detail-meta">Uganda | Parks</p>
+            <h3 id="destination-detail-title">Bwindi Gorilla Trekking</h3>
+            <p id="destination-detail-copy">Bwindi & Mgahinga | Expert Guides | Once-in-a-Lifetime Experience</p>
+            <ul id="destination-detail-list">
+              <li>Best for mountain gorilla trekking</li>
+              <li>Expert guide coordination</li>
+              <li>Permit and transport support</li>
+            </ul>
+            <a id="destination-detail-link" href="https://wa.me/256772510411?text=Hello%20Augur%20Tours%2C%20I%20would%20like%20to%20book%20Bwindi%20Gorilla%20Trekking.%20You%20can%20also%20reach%20me%20through%20%2B256%20772%20510%20411." target="_blank" rel="noopener">Book This Place</a>
+          </article>
+
+          <div class="legend">
+            <h3>Map Legend</h3>
+            <p><span class="legend-dot ug"></span>Uganda</p>
+            <p><span class="legend-dot rw"></span>Rwanda</p>
+            <p><span class="legend-dot selected"></span>Selected Pin</p>
+            <p>Click markers for details</p>
+          </div>
+
+          <div class="destination-stats">
+            <article><span>Total Destinations</span><strong>20</strong></article>
+            <article><span>Uganda</span><strong>14</strong></article>
+            <article><span>Rwanda</span><strong>6</strong></article>
+          </div>
+
+          <div class="explore-card">
+            <h3>Ready to Explore East Africa?</h3>
+            <p>Contact us now to plan your unforgettable adventure</p>
+            <a href="https://wa.me/256772510411">WhatsApp: +256 772 510411</a>
+            <a href="tel:+256772510411">Call: +256 772 510411</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" href="index.html#home"><img class="brand-logo" src="assets/augur-logo.webp" alt="" aria-hidden="true"><span class="brand-text"><strong>Augur Tours</strong><small>East &amp; Central Africa</small></span></a><p>Your trusted partner for customized tours & travel solutions across East and Central Africa since 2011.</p><p class="license-badge">Licensed & Insured</p></div>
+      <div><h3>Quick Links</h3><a href="about.html">About Us</a><a href="services.html">Services</a><a href="destinations.html">Destinations</a><a href="wild-tours.html">Wildlife & Tours</a><a href="gallery.html">Gallery</a><a href="safari-gallery.html">Safari Gallery</a><a href="index.html#booking">Book Now</a><a href="index.html#contact">Contact</a></div>
+      <div><h3>Contact Us</h3><p><a href="tel:+256772510411">Primary: +256 772 510 411</a></p><p><a href="mailto:rssempebwa@augurtravel.com">rssempebwa@augurtravel.com</a></p><p><a href="mailto:mnakibuuka@augurtravel.com">mnakibuuka@augurtravel.com</a></p><p class="email-shift-note">Email notice: we are moving from augurtoursuganda@gmail.com to our @augurtravel.com addresses.</p><p>Kampala, Kabale, Nansana - Uganda</p></div>
+      <div><h3>Business Hours</h3><p>Mon - Fri: 8:00 AM - 6:00 PM</p><p>Sat: 9:00 AM - 2:00 PM</p><p>Sun: Closed</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Augur Tours &amp; Travel Limited. All rights reserved.</p><p>Licensed by Uganda Tourism Board</p></div>
+  </footer>
+  <a class="chat-float" href="https://wa.me/256772510411" aria-label="Chat on WhatsApp">Chat</a>
+  <script src="app.js"></script>
+</body>
+</html>

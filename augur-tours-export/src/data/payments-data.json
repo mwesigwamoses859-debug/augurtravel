@@ -1,0 +1,6 @@
+[
+  { "method": "Mobile Money", "providers": ["MTN", "Airtel"], "status": "integration-ready" },
+  { "method": "Bank Transfer", "providers": ["Manual confirmation"], "status": "available" },
+  { "method": "Credit/Debit Cards", "providers": ["Gateway pending"], "status": "integration-ready" },
+  { "method": "PayPal", "providers": ["PayPal"], "status": "integration-ready" }
+]

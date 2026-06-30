@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "augur-tours",
+  "compatibility_date": "2026-05-29",
+  "pages_build_output_dir": "dist",
+  "vars": {
+    "PUBLIC_SITE_NAME": "Augur Tours & Travel Limited"
+  }
+}

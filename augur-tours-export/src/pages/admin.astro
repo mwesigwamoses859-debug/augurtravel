@@ -1,0 +1,10 @@
+---
+import MainLayout from "@/layouts/main.astro";
+import { Navigation } from "@/components/Navigation";
+import { AdminDashboard } from "@/components/AdminDashboard";
+---
+<MainLayout title="Admin Dashboard | Augur Tours">
+  <Navigation client:load />
+  <section class="hero"><h1>Admin Dashboard</h1><p>Bookings, revenue tracking, customers, analytics, and reports.</p></section>
+  <section class="section"><AdminDashboard /></section>
+</MainLayout>

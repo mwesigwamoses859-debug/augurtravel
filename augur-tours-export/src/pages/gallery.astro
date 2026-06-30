@@ -1,0 +1,16 @@
+---
+import MainLayout from "@/layouts/main.astro";
+import gallery from "@/data/gallery-config.json";
+---
+<MainLayout title="Safari Gallery | Augur Tours">
+  <section class="hero"><h1>Safari Gallery</h1><p>Photo galleries by category with lazy loading and captions.</p></section>
+  <section class="section grid">
+    {gallery.map((item) => (
+      <article class="card">
+        <img src={item.src} alt={item.caption} loading="lazy" />
+        <h3>{item.caption}</h3>
+        <p>{item.category}</p>
+      </article>
+    ))}
+  </section>
+</MainLayout>
