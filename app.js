@@ -558,9 +558,16 @@ const wildlifePhotoCaptions = [
   "Buffalo and egret at a savannah wallow"
 ];
 
+const wildlifePhotoSelection = [
+  1, 2, 3, 6, 8, 9, 10, 11, 14, 18,
+  20, 25, 29, 37, 38, 40, 43, 45, 46, 47,
+  48, 50, 52, 55, 58, 60, 63, 65, 66
+];
+
 if (wildlifePhotoGrid) {
-  wildlifePhotoCaptions.forEach((caption, index) => {
-    const number = String(index + 1).padStart(2, "0");
+  wildlifePhotoSelection.forEach((photoNumber) => {
+    const caption = wildlifePhotoCaptions[photoNumber - 1];
+    const number = String(photoNumber).padStart(2, "0");
     const figure = document.createElement("figure");
     const link = document.createElement("a");
     const image = document.createElement("img");
@@ -593,3 +600,18 @@ newsletterClose?.addEventListener("click", () => {
   newsletterPanel?.classList.remove("is-open");
   localStorage.setItem("augurNewsletterDismissed", "true");
 });
+
+const footerBottom = document.querySelector(".footer-bottom");
+
+if (footerBottom && !footerBottom.querySelector(".design-credit")) {
+  const designCredit = document.createElement("p");
+  designCredit.className = "design-credit";
+  designCredit.innerHTML = `
+    <span>Designed by <strong>MosesTechFixSolutions</strong></span>
+    <span>WhatsApp:
+      <a href="https://wa.me/256789218570" target="_blank" rel="noopener">0789 218 570</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://wa.me/256708262179" target="_blank" rel="noopener">0708 262 179</a>
+    </span>`;
+  footerBottom.appendChild(designCredit);
+}
