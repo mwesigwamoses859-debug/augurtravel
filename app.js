@@ -700,7 +700,7 @@ const newsletterPanel = document.querySelector("#newsletter-panel");
 const newsletterClose = document.querySelector("#newsletter-close");
 
 if (newsletterPanel && localStorage.getItem("augurNewsletterDismissed") !== "true") {
-  setTimeout(() => newsletterPanel.classList.add("is-open"), 12000);
+  setTimeout(() => newsletterPanel.classList.add("is-open"), 30000);
 }
 
 newsletterClose?.addEventListener("click", () => {

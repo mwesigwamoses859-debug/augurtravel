@@ -2415,6 +2415,87 @@ body.contact-in-view .assistant-button {
   }
 }
 
+/* Final interface polish */
+.guide-jump-nav {
+  scrollbar-width: none;
+}
+
+.guide-jump-nav::-webkit-scrollbar {
+  display: none;
+}
+
+#package-filter-reset {
+  min-height: 48px;
+  padding: 0.7rem 1rem;
+  border: 1px solid #173d2c;
+  background: #eef4ef;
+  color: #173d2c;
+  box-shadow: none;
+}
+
+#package-filter-reset:hover {
+  background: #173d2c;
+  color: #fff;
+}
+
+.newsletter-panel {
+  overflow: hidden;
+  border-top: 4px solid var(--gold);
+}
+
+.newsletter-panel .eyebrow,
+.newsletter-panel h3,
+.newsletter-panel p {
+  margin: 0;
+}
+
+.newsletter-panel .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.newsletter-panel .newsletter-dismiss {
+  min-height: 40px;
+  color: var(--green-900);
+  background: transparent;
+  border: 1px solid rgba(23, 61, 44, 0.2);
+}
+
+.newsletter-panel .newsletter-dismiss:hover {
+  background: #eef4ef;
+}
+
+@media (max-width: 640px) {
+  .brand-text {
+    max-width: 170px;
+    text-overflow: clip;
+  }
+
+  .review-proof-actions .btn,
+  .form-actions .btn {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .review-standards article {
+    gap: 0.5rem;
+  }
+
+  .call-float {
+    display: none;
+  }
+
+  .newsletter-panel {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+    padding: 18px;
+    border-radius: 18px;
+  }
+}
+
 @media (max-width: 520px) {
   .site-header {
     padding-inline: 14px;
