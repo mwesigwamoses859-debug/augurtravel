@@ -39,37 +39,37 @@
       <div>
         <p class="eyebrow">Wild Tours</p>
         <h1>Discover East Africa</h1>
-        <p>20+ breathtaking destinations. Click any pin or destination name to explore the site details.</p>
+        <p>16 highlighted Uganda and Rwanda route ideas. Click any pin or destination name to compare photos, route notes, and booking options.</p>
       </div>
     </section>
 
     <section class="section map-section wild-map-section" id="map">
       <div class="section-heading">
         <p class="eyebrow">Live Interactive Map</p>
-        <h2>Uganda and Rwanda destinations</h2>
-        <p>Click any marker to view destination details, highlights, and booking options.</p>
+        <h2>Uganda and Rwanda route explorer</h2>
+        <p>Click any marker to view destination details, matching photos, route timing, highlights, and quote options.</p>
       </div>
 
       <div class="map-layout">
         <div class="map-panel">
           <div class="country-tabs" role="tablist" aria-label="Country filters">
-            <button type="button" class="is-active" data-country="both"><span>All</span><strong>Both</strong><em>(20)</em></button>
-            <button type="button" data-country="uganda"><span>UG</span><strong>Uganda</strong><em>(14)</em></button>
-            <button type="button" data-country="rwanda"><span>RW</span><strong>Rwanda</strong><em>(6)</em></button>
+            <button type="button" class="is-active" data-country="both"><span>All</span><strong>Both</strong><em>(16)</em></button>
+            <button type="button" data-country="uganda"><span>UG</span><strong>Uganda</strong><em>(11)</em></button>
+            <button type="button" data-country="rwanda"><span>RW</span><strong>Rwanda</strong><em>(5)</em></button>
           </div>
 
           <div class="category-tabs" aria-label="Destination categories">
-            <button class="is-active" type="button" data-category="all">All (20)</button>
-            <button type="button" data-category="parks">Parks (13)</button>
+            <button class="is-active" type="button" data-category="all">All (16)</button>
+            <button type="button" data-category="parks">Parks (11)</button>
             <button type="button" data-category="natural">Natural (3)</button>
             <button type="button" data-category="sanctuary">Sanctuary (1)</button>
-            <button type="button" data-category="cultural">Cultural (3)</button>
+            <button type="button" data-category="cultural">Cultural (1)</button>
           </div>
 
           <div class="map-box">
             <div class="map-topline">
-              <strong>Live Map View</strong>
-              <span>Click any marker to view details</span>
+              <strong>Route Explorer View</strong>
+              <span>Illustrative route map - click any marker to view details</span>
             </div>
             <div class="map-canvas" aria-label="Live map view">
               <button class="marker marker-1 uganda parks is-selected" type="button" data-destination="bwindi" aria-label="Bwindi Impenetrable National Park"></button>
@@ -85,16 +85,19 @@
               <button class="marker marker-11 uganda parks" type="button" data-destination="mburo" aria-label="Lake Mburo National Park"></button>
               <button class="marker marker-12 uganda parks" type="button" data-destination="rwenzori" aria-label="Rwenzori Mountains National Park"></button>
               <button class="marker marker-13 uganda parks" type="button" data-destination="elgon" aria-label="Mount Elgon National Park"></button>
+              <button class="marker marker-14 rwanda parks" type="button" data-destination="akagera" aria-label="Akagera National Park"></button>
+              <button class="marker marker-15 rwanda parks" type="button" data-destination="nyungwe" aria-label="Nyungwe National Park"></button>
+              <button class="marker marker-16 rwanda natural" type="button" data-destination="kivu" aria-label="Lake Kivu"></button>
               <button class="map-control plus" type="button">+</button>
               <button class="map-control minus" type="button">-</button>
-              <span class="leaflet-credit">Leaflet | OpenStreetMap contributors</span>
+              <span class="leaflet-credit">Illustrative route planner</span>
             </div>
           </div>
 
           <div class="destination-pills" aria-label="Destination list">
             <button class="is-selected uganda parks" type="button" data-destination="bwindi">Bwindi Gorilla Trekking</button>
-            <button class="uganda parks" type="button" data-destination="murchison">Murchison Falls Safari</button>
-            <button class="uganda parks" type="button" data-destination="queen">Queen Elizabeth Park</button>
+            <button class="uganda parks" type="button" data-destination="murchison">Murchison Falls National Park</button>
+            <button class="uganda parks" type="button" data-destination="queen">Queen Elizabeth National Park</button>
             <button class="uganda parks" type="button" data-destination="kidepo">Kidepo Valley National Park</button>
             <button class="uganda parks" type="button" data-destination="kibale">Kibale Chimpanzee</button>
             <button class="uganda parks" type="button" data-destination="mburo">Lake Mburo National Park</button>
@@ -104,6 +107,9 @@
             <button class="uganda natural" type="button" data-destination="jinja">Jinja Water Sports</button>
             <button class="uganda sanctuary" type="button" data-destination="zziwa">Ziwa Rhino Sanctuary</button>
             <button class="rwanda parks" type="button" data-destination="volcanoes">Rwanda Volcanoes</button>
+            <button class="rwanda parks" type="button" data-destination="akagera">Akagera National Park</button>
+            <button class="rwanda parks" type="button" data-destination="nyungwe">Nyungwe National Park</button>
+            <button class="rwanda natural" type="button" data-destination="kivu">Lake Kivu</button>
             <button class="rwanda cultural" type="button" data-destination="kigali">Kigali City Tour</button>
           </div>
         </div>
@@ -114,6 +120,8 @@
             <p class="eyebrow" id="destination-detail-meta">Uganda | Parks</p>
             <h3 id="destination-detail-title">Bwindi Gorilla Trekking</h3>
             <p id="destination-detail-copy">Bwindi & Mgahinga | Expert Guides | Once-in-a-Lifetime Experience</p>
+            <p class="destination-detail-route" id="destination-detail-route"><strong>Route note:</strong> Best planned from Kampala, Entebbe, Kabale, or Kigali depending on permits and lodges.</p>
+            <p class="quote-note" id="destination-detail-quote">From quote - final price depends on permits, lodge level, dates, vehicle, and group size.</p>
             <ul id="destination-detail-list">
               <li>Best for mountain gorilla trekking</li>
               <li>Expert guide coordination</li>
@@ -131,14 +139,14 @@
           </div>
 
           <div class="destination-stats">
-            <article><span>Total Destinations</span><strong>20</strong></article>
-            <article><span>Uganda</span><strong>14</strong></article>
-            <article><span>Rwanda</span><strong>6</strong></article>
+            <article><span>Total Destinations</span><strong>16</strong></article>
+            <article><span>Uganda</span><strong>11</strong></article>
+            <article><span>Rwanda</span><strong>5</strong></article>
           </div>
 
           <div class="explore-card">
             <h3>Ready to Explore East Africa?</h3>
-            <p>Contact us now to plan your unforgettable adventure</p>
+            <p>Send your month, group size, pickup point, and preferred route so Augur can prepare a realistic quote.</p>
             <a href="https://wa.me/256772510411">WhatsApp: +256 772 510411</a>
             <a href="tel:+256772510411">Call: +256 772 510411</a>
           </div>

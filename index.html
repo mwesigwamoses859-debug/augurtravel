@@ -76,10 +76,16 @@
       </div>
       <a class="wild-link" href="wild-tours.html">Wild Tours <b>NEW</b></a>
       <a href="destinations.html">Destinations</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="safari-gallery.html">Safari Gallery</a>
+      <a href="safari-gallery.html">Gallery</a>
       <a href="blog.html">Travel News</a>
-      <a href="customer.html">Create Account</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">Plan Your Trip <span aria-hidden="true">v</span></button>
+        <div class="dropdown-menu" aria-label="Plan your trip">
+          <a href="trip-planner.html"><strong>Trip Builder</strong><small>Create a custom safari brief and itinerary request.</small></a>
+          <a href="travel-guide.html"><strong>Travel Guide</strong><small>Permits, seasons, packing, visas, health, and money.</small></a>
+          <a href="packages.html"><strong>Compare Packages</strong><small>Filter tours by country, activity, duration, and style.</small></a>
+        </div>
+      </div>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -205,27 +211,27 @@
       <div class="signature-grid">
         <article>
           <p class="eyebrow">3 Days</p>
-          <h3>Bwindi Gorilla Trekking</h3>
-          <p>Gorilla permit coordination, private transport, and lodge support.</p>
-          <a href="packages.html">View package</a>
+          <h3>Murchison Falls Safari</h3>
+          <p>Game drives, Nile boat cruise, Murchison Falls visit, giraffes, elephants, hartebeests, and patas monkey sightings.</p>
+          <a href="murchison-falls-safari.html">View package</a>
         </article>
         <article>
-          <p class="eyebrow">5 Days</p>
-          <h3>Gorilla & Chimp Trekking</h3>
-          <p>Bwindi, Kibale, forest walks, and western Uganda scenery.</p>
-          <a href="packages.html">View package</a>
+          <p class="eyebrow">3 Days</p>
+          <h3>Queen Elizabeth Safari</h3>
+          <p>Kazinga Channel boat cruise, elephant herds, crater lakes, salt pans, Kasenyi game drives, and Ishasha add-ons.</p>
+          <a href="queen-elizabeth-safari.html">View package</a>
         </article>
         <article>
-          <p class="eyebrow">7 Days</p>
-          <h3>Uganda Wildlife Safari</h3>
-          <p>Game drives, boat cruises, primates, and national park transfers.</p>
-          <a href="packages.html">View package</a>
+          <p class="eyebrow">1 Day</p>
+          <h3>Ziwa Rhino Tracking</h3>
+          <p>Guided rhino tracking, conservation experience, and a road trip from Kampala or Entebbe.</p>
+          <a href="ziwa-rhino-tracking.html">View package</a>
         </article>
         <article>
-          <p class="eyebrow">Custom</p>
-          <h3>Corporate Travel Plan</h3>
-          <p>Airport pickups, event transport, staff movement, and vehicle hire.</p>
-          <a href="car-hire.html">Request vehicles</a>
+          <p class="eyebrow">Add-on</p>
+          <h3>Rwanda Lake Kivu</h3>
+          <p>A relaxing Lake Kivu boat journey and lakeside stay after Kigali, Volcanoes, or Uganda-Rwanda tours.</p>
+          <a href="lake-kivu-addon.html">View package</a>
         </article>
       </div>
     </section>
@@ -267,6 +273,33 @@
       </div>
     </section>
 
+    <section class="section planning-hub-section" id="plan">
+      <div class="section-heading">
+        <p class="eyebrow">Plan With Confidence</p>
+        <h2>Everything you need before requesting a quote</h2>
+        <p>Build a trip brief, understand permit timing, compare travel seasons, and see how Uganda's main safari routes connect.</p>
+      </div>
+      <div class="planning-hub-grid">
+        <article><span class="planning-number">01</span><h3>Build your trip</h3><p>Choose destinations, activities, comfort level, dates, and group size. Your selections become a clear quotation request.</p><a href="trip-planner.html">Open trip builder</a></article>
+        <article><span class="planning-number">02</span><h3>Permits &amp; seasons</h3><p>Learn when to secure gorilla and chimpanzee permits and what Uganda's wet and dry seasons mean for your route.</p><a href="travel-guide.html#permits">Read permit guide</a></article>
+        <article><span class="planning-number">03</span><h3>Routes &amp; drive times</h3><p>Compare Kampala, Entebbe, western Uganda, Murchison, Bwindi, and Rwanda connections before choosing trip length.</p><a href="travel-guide.html#routes">Explore route map</a></article>
+      </div>
+    </section>
+
+    <section class="section review-proof-section" id="reviews">
+      <div class="review-proof-intro">
+        <p class="eyebrow">Trust &amp; Reviews</p>
+        <h2>Real proof, clearly presented</h2>
+        <p>Augur has served travelers, NGOs, health organizations, insurers, breweries, and consultants since 2011. Customer reviews will only be published here with a verifiable public source or the traveler's permission.</p>
+        <div class="review-proof-actions"><a class="btn btn-primary" href="about.html#partners">View company partners</a><a class="btn btn-secondary" href="https://wa.me/256772510411?text=Hello%20Augur%20Tours%2C%20I%20would%20like%20to%20share%20feedback%20about%20my%20trip." target="_blank" rel="noopener">Share trip feedback</a></div>
+      </div>
+      <div class="review-standards">
+        <article><strong>Verified source</strong><span>Public review link or direct customer permission.</span></article>
+        <article><strong>No invented names</strong><span>Testimonials are never filled with anonymous marketing copy.</span></article>
+        <article><strong>Recent field proof</strong><span>Safari photographs and conservation updates support the travel story.</span></article>
+      </div>
+    </section>
+
     <section class="section booking-section" id="booking">
       <div class="section-heading">
         <p class="eyebrow">Easy Booking</p>
@@ -287,8 +320,8 @@
           <span>Destination</span>
           <select id="destination-select">
             <option value="bwindi">Bwindi Gorilla Trekking</option>
-            <option value="murchison">Murchison Falls Safari</option>
-            <option value="queen">Queen Elizabeth Park</option>
+            <option value="murchison">Murchison Falls National Park</option>
+            <option value="queen">Queen Elizabeth National Park</option>
             <option value="jinja">Jinja Water Sports</option>
             <option value="kibale">Kibale Chimpanzee</option>
             <option value="rwanda">Rwanda Volcanoes</option>
@@ -365,7 +398,7 @@
       </div>
 
       <div class="contact-layout extended-contact">
-        <form class="contact-form platform-card">
+        <form class="contact-form platform-card" id="booking-enquiry-form">
           <p class="eyebrow">Contact Form</p>
           <h3>Send a booking enquiry</h3>
           <label><span>Name</span><input id="contact-name" type="text" placeholder="Your name"></label>
@@ -378,7 +411,11 @@
             <label><span>Budget guide</span><select id="contact-budget"><option>Not sure yet</option><option>Budget-conscious</option><option>Mid-range</option><option>Comfort</option><option>Luxury</option><option>Corporate account</option></select></label>
           </div>
           <label><span>Message</span><textarea id="contact-message" placeholder="Tell us your destination, dates, guests, and preferences"></textarea></label>
-          <a class="btn btn-primary" id="contact-whatsapp-link" href="https://wa.me/256772510411?text=Hello%20Augur%20Tours%2C%20I%20would%20like%20to%20send%20a%20booking%20enquiry." target="_blank" rel="noopener">Send via WhatsApp</a>
+          <div class="form-actions">
+            <button class="btn btn-primary" id="save-enquiry-button" type="submit">Save Enquiry</button>
+            <a class="btn btn-secondary" id="contact-whatsapp-link" href="https://wa.me/256772510411?text=Hello%20Augur%20Tours%2C%20I%20would%20like%20to%20send%20a%20booking%20enquiry." target="_blank" rel="noopener">Send via WhatsApp</a>
+          </div>
+          <p class="form-status" id="enquiry-status" role="status" aria-live="polite"></p>
         </form>
         <div class="map-embed" aria-label="Office location map">
           <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Nansana%20Business%20Center%20Uganda&output=embed" title="Augur Tours office location"></iframe>
@@ -401,8 +438,9 @@
         <a href="services.html">Services</a>
         <a href="destinations.html">Destinations</a>
         <a href="wild-tours.html">Wildlife & Tours</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="safari-gallery.html">Safari Gallery</a>
+        <a href="safari-gallery.html">Gallery</a>
+        <a href="trip-planner.html">Trip Builder</a>
+        <a href="travel-guide.html">Travel Guide</a>
         <a href="blog.html">Travel News</a>
         <a href="#booking">Book Now</a>
         <a href="#contact">Contact</a>
