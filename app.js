@@ -1,3 +1,37 @@
+/* Page-specific canonical and social metadata for the static site. */
+(() => {
+  const siteOrigin = "https://augurtravel.com";
+  const path = window.location.pathname === "/" || /\/index\.html$/i.test(window.location.pathname)
+    ? "/"
+    : window.location.pathname;
+  const canonicalUrl = `${siteOrigin}${path}`;
+  const description = document.querySelector('meta[name="description"]')?.content
+    || "Uganda safaris, gorilla trekking, airport transfers, car hire, and corporate transport from Augur Tours.";
+  const image = `${siteOrigin}/assets/safari/gorilla.webp`;
+  const ensureMeta = (selector, attributes, content) => {
+    let element = document.head.querySelector(selector);
+    if (!element) {
+      element = document.createElement("meta");
+      Object.entries(attributes).forEach(([name, value]) => element.setAttribute(name, value));
+      document.head.appendChild(element);
+    }
+    element.content = content;
+  };
+  let canonical = document.head.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    document.head.appendChild(canonical);
+  }
+  canonical.href = canonicalUrl;
+  ensureMeta('meta[property="og:type"]', { property: "og:type" }, "website");
+  ensureMeta('meta[property="og:title"]', { property: "og:title" }, document.title);
+  ensureMeta('meta[property="og:description"]', { property: "og:description" }, description);
+  ensureMeta('meta[property="og:url"]', { property: "og:url" }, canonicalUrl);
+  ensureMeta('meta[property="og:image"]', { property: "og:image" }, image);
+  ensureMeta('meta[name="twitter:card"]', { name: "twitter:card" }, "summary_large_image");
+})();
+
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const navDropdowns = Array.from(document.querySelectorAll(".nav-dropdown"));
@@ -792,10 +826,11 @@ packageFilterReset?.addEventListener("click", () => {
 });
 updatePackageFilters();
 
-/* Device-local enquiry capture. Ready to replace with a hosted API later. */
-const enquiryStorageKey = "augurBookingEnquiries";
 const bookingEnquiryForm = document.querySelector("#booking-enquiry-form");
 const enquiryStatus = document.querySelector("#enquiry-status");
+
+/* The trip-builder workspace can retain a device-local draft; it is never presented as a submitted customer enquiry. */
+const enquiryStorageKey = "augurBookingEnquiries";
 
 function readEnquiries() {
   try {
@@ -813,30 +848,8 @@ function storeEnquiry(enquiry) {
 
 bookingEnquiryForm?.addEventListener("submit", (event) => {
   event.preventDefault();
-  const name = contactName?.value?.trim();
-  const reach = contactReach?.value?.trim();
-  if (!name || !reach) {
-    if (enquiryStatus) enquiryStatus.textContent = "Please add your name and an email or phone number.";
-    return;
-  }
-
-  const createdAt = new Date();
-  const enquiry = {
-    reference: `AUG-${createdAt.getFullYear()}-${String(createdAt.getTime()).slice(-6)}`,
-    createdAt: createdAt.toISOString(),
-    name,
-    reach,
-    type: contactType?.value || "Tour package",
-    month: contactMonth?.value || "Not sure yet",
-    duration: contactDuration?.value || "Not sure yet",
-    travelers: contactTravelers?.value || "2",
-    budget: contactBudget?.value || "Not sure yet",
-    message: contactMessage?.value?.trim() || ""
-  };
-  storeEnquiry(enquiry);
-  if (enquiryStatus) {
-    enquiryStatus.innerHTML = `Saved as <strong>${enquiry.reference}</strong>. You can also send it on WhatsApp for the fastest response.`;
-  }
+  if (enquiryStatus) enquiryStatus.textContent = "Use Continue on WhatsApp to send your enquiry directly to Augur Tours.";
+  contactWhatsappLink?.focus();
 });
 
 /* Custom trip builder */
