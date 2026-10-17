@@ -4,10 +4,19 @@
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
+/customer
+  X-Robots-Tag: noindex, nofollow
+
 /customer.html
   X-Robots-Tag: noindex, nofollow
 
+/enquiries
+  X-Robots-Tag: noindex, nofollow
+
 /enquiries.html
+  X-Robots-Tag: noindex, nofollow
+
+/platform
   X-Robots-Tag: noindex, nofollow
 
 /platform.html

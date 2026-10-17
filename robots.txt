@@ -1,7 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /customer
 Disallow: /customer.html
+Disallow: /enquiries
 Disallow: /enquiries.html
+Disallow: /platform
 Disallow: /platform.html
 
 Sitemap: https://augurtravel.com/sitemap.xml
