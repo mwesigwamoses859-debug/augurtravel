@@ -3,7 +3,7 @@
   const siteOrigin = "https://augurtravel.com";
   const path = window.location.pathname === "/" || /\/index\.html$/i.test(window.location.pathname)
     ? "/"
-    : window.location.pathname;
+    : window.location.pathname.replace(/\.html$/i, "");
   const canonicalUrl = `${siteOrigin}${path}`;
   const description = document.querySelector('meta[name="description"]')?.content
     || "Uganda safaris, gorilla trekking, airport transfers, car hire, and corporate transport from Augur Tours.";
@@ -36,16 +36,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const navDropdowns = Array.from(document.querySelectorAll(".nav-dropdown"));
 
-if (siteNav && !siteNav.querySelector('a[href="blog.html"]')) {
-  const blogLink = document.createElement("a");
-  blogLink.href = "blog.html";
-  blogLink.textContent = "Travel News";
-  if (window.location.pathname.toLowerCase().endsWith("/blog.html")) {
-    blogLink.classList.add("is-current");
-  }
-  const accountLink = siteNav.querySelector('a[href="customer.html"]');
-  siteNav.insertBefore(blogLink, accountLink || null);
-}
+
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = siteNav.classList.toggle("is-open");
@@ -286,10 +277,7 @@ const destinationData = {
   }
 };
 
-function whatsappFor(title) {
-  const text = `Hello Augur Tours, I would like to book ${title}. You can also reach me through +256 772 510 411.`;
-  return `https://wa.me/256772510411?text=${encodeURIComponent(text)}`;
-}
+function whatsappFor(title) { return `/booking-request?service=Safari&trip=${encodeURIComponent(title)}`; }
 
 const destinationSelect = document.querySelector("#destination-select");
 const summaryImage = document.querySelector("#destination-summary-image");
@@ -521,14 +509,7 @@ const assistantButton = document.querySelector(".assistant-button");
 const assistantPanel = document.querySelector("#travel-assistant");
 const assistantMessages = document.querySelector(".assistant-messages");
 
-if (!document.querySelector(".call-float")) {
-  const callFloat = document.createElement("a");
-  callFloat.className = "call-float";
-  callFloat.href = "tel:+256772510411";
-  callFloat.setAttribute("aria-label", "Call Augur Tours on 0772 510 411");
-  callFloat.textContent = "Call";
-  document.body.appendChild(callFloat);
-}
+
 
 function updateFloatingActions() {
   const revealPoint = Math.min(520, window.innerHeight * 0.62);
@@ -968,3 +949,4 @@ exportEnquiries?.addEventListener("click", () => {
   URL.revokeObjectURL(url);
 });
 renderEnquiries();
+

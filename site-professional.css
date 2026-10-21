@@ -1,0 +1,44 @@
+/* Shared page rhythm using the original Augur palette and photographs. */
+[hidden]{display:none!important}
+.augur-inner{background:var(--cream)}
+.augur-inner .page-hero{padding:82px max(24px,calc((100vw - 1200px)/2));min-height:390px;display:flex;align-items:center;isolation:isolate}
+.augur-inner .page-hero>div{max-width:850px}
+.augur-inner .page-hero h1{font-size:clamp(36px,4.6vw,60px);line-height:1.08;max-width:850px;letter-spacing:-1.5px}
+.augur-inner .page-hero p:not(.eyebrow){max-width:690px;font-size:16px;line-height:1.8}
+.augur-inner .page-hero .hero-actions{margin-top:26px}
+.augur-inner .page-hero .eyebrow{color:var(--gold)}
+.augur-inner .section{padding-top:65px;padding-bottom:65px}
+.augur-inner .section-heading{max-width:800px}
+.augur-inner .section-heading h2{font-size:clamp(27px,3vw,40px)}
+.augur-inner .section-heading p{font-size:15px}
+.augur-inner .btn{font-size:13px;min-height:46px;border:0;cursor:pointer;gap:12px}
+.augur-inner .btn-secondary{color:var(--green-950);background:var(--linen);border:1px solid var(--border)}
+.augur-inner .page-hero .btn-secondary{color:var(--white);background:rgba(255,253,247,.12);border:1px solid rgba(255,253,247,.42)}
+.augur-inner .detail-grid article,.augur-inner .platform-card,.augur-inner .package-card,.augur-inner .listing-card,.augur-inner .faq-grid details{box-shadow:none}
+.augur-inner .detail-grid h3{font-size:18px}.augur-inner .detail-grid p{font-size:14px}
+.augur-inner .platform-split{gap:28px}.augur-inner .platform-card h2{font-size:30px;line-height:1.15}
+.augur-inner .platform-card p,.augur-inner .platform-card li{font-size:14px;line-height:1.8}
+.augur-inner .package-grid{gap:24px}.augur-inner .package-grid article{display:flex;flex-direction:column;overflow:hidden}
+.augur-inner .package-grid article img{width:100%;height:245px;object-fit:cover}
+.augur-inner .package-grid article>div{display:flex;flex-direction:column;flex:1}
+.augur-inner .package-grid article h3{font-size:20px}.augur-inner .package-grid article p{font-size:14px}
+.augur-inner .service-page-grid img,.augur-inner .listing-grid img{height:240px;width:100%;object-fit:cover}
+.augur-inner .faq-grid summary{cursor:pointer;font-size:15px}.augur-inner .faq-grid p{font-size:14px}
+.augur-inner .site-nav a[aria-current=page]{color:var(--gold)}
+.augur-inner .site-nav a.nav-cta[aria-current=page]{color:var(--green-950)}
+.professional-services{display:grid;gap:28px}
+.service-feature-card{display:grid;grid-template-columns:1fr 1.1fr;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;min-height:320px}
+.service-feature-card:nth-child(even)>img{order:2}.service-feature-card>img{width:100%;height:100%;max-height:380px;object-fit:cover}
+.service-feature-card>div{padding:40px;align-self:center}.service-feature-card h2{font-size:34px}.service-feature-card p:not(.eyebrow){font-size:15px;line-height:1.8;color:var(--muted)}
+.service-card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:26px}.small-quote{font-size:12px;font-weight:700;padding:11px 15px;background:var(--gold);border-radius:6px}
+.process-overview{background:var(--linen)}.process-overview .process-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.process-overview .process-grid article{box-shadow:none}.process-overview .process-grid p{font-size:13px;color:var(--muted)}
+.service-enquiry .privacy-note{font-size:12px;color:var(--muted);margin-top:18px}
+.tour-photo-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.tour-photo-strip figure{margin:0;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}.tour-photo-strip img{width:100%;height:230px;object-fit:cover}.tour-photo-strip figcaption{padding:15px;font-size:12px;color:var(--green-950);font-weight:700}
+.reading-panel{max-width:850px;margin:0 auto;padding:40px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius)}.reading-panel h1{font-size:42px}.reading-panel h2{font-size:26px;margin-top:35px}.reading-panel p,.reading-panel li{font-size:16px;line-height:1.85}.reading-panel a:not(.btn){text-decoration:underline;text-underline-offset:3px;color:var(--green-800)}
+.enquiry-shell{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(260px,.8fr);gap:30px;align-items:start}.booking-flow{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:34px}.enquiry-steps{display:flex;padding:0;margin:0 0 36px;list-style:none;border-bottom:1px solid var(--border);gap:24px}.enquiry-steps li{padding:0 0 18px;color:var(--muted);font-size:12px;font-weight:700;flex:1}.enquiry-steps li[aria-current=step]{color:var(--green-950);border-bottom:3px solid var(--gold)}.enquiry-steps span{display:block;font-size:11px;margin-top:6px}
+#professional-booking fieldset{border:0;margin:0;padding:0;min-width:0}#professional-booking legend{font-size:27px;font-weight:800;color:var(--green-950);margin-bottom:12px}#professional-booking fieldset>p{font-size:14px;color:var(--muted)}
+.booking-fields{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px}#professional-booking label{display:flex;flex-direction:column;gap:8px;font-size:12px;font-weight:700;color:var(--green-950)}#professional-booking .optional{font-size:10px;font-weight:400;color:var(--muted)}#professional-booking input,#professional-booking select,#professional-booking textarea{font:inherit;font-size:14px;padding:12px;border:1px solid var(--border);border-radius:6px;background:var(--cream);color:var(--ink);width:100%;min-width:0}#professional-booking input,#professional-booking select{min-height:46px}#professional-booking textarea{min-height:100px;resize:vertical}#professional-booking .wide-field{margin-top:22px}.booking-navigation{display:flex;justify-content:space-between;gap:16px;margin-top:28px}.booking-navigation #booking-next{margin-left:auto}.booking-error{color:var(--rust);font-weight:700;font-size:13px;margin-top:16px}.booking-help{padding:30px;background:var(--green-950);border-radius:var(--radius);color:var(--white)}.booking-help .eyebrow{color:var(--gold)}.booking-help h2{color:var(--white);font-size:28px}.booking-help ol{padding-left:18px;font-size:13px;line-height:1.8}.booking-help li{margin:14px 0}.help-contact{border-top:1px solid var(--sand);padding-top:18px;margin:24px 0;font-size:13px}.help-contact a{display:block;color:var(--gold);overflow-wrap:anywhere}.booking-help .text-link{color:var(--gold)}
+.privacy-note{font-size:12px!important;color:var(--muted);line-height:1.8}.privacy-note a{text-decoration:underline}.review-summary{margin:24px 0}.review-summary>div{display:grid;grid-template-columns:130px minmax(0,1fr);gap:18px;border-bottom:1px solid var(--border);padding:13px 0;font-size:13px}.review-summary dt{color:var(--muted)}.review-summary dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.booking-send-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.booking-send-actions button{background:transparent;border:0;border-bottom:1px solid var(--gold);cursor:pointer}.service-form-note{font-size:12px;margin-top:12px;color:var(--muted)}
+@media(max-width:1000px){.enquiry-shell{grid-template-columns:1fr}.booking-help{display:block}.service-feature-card>div{padding:28px}.tour-photo-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.process-overview .process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:780px){.augur-inner .page-hero{padding:55px 24px;min-height:330px}.augur-inner .page-hero h1{font-size:38px;letter-spacing:-1px}.augur-inner .page-hero p:not(.eyebrow){font-size:14px}.service-feature-card{grid-template-columns:1fr}.service-feature-card:nth-child(even)>img{order:0}.service-feature-card>img{height:250px;max-height:none}.service-feature-card h2{font-size:29px}.service-card-actions{gap:14px}.booking-flow{padding:24px}.enquiry-steps{gap:14px}.booking-fields{grid-template-columns:1fr}.tour-photo-strip img{height:180px}.tour-photo-strip{gap:12px}.reading-panel{padding:25px}.reading-panel h1{font-size:32px}.reading-panel h2{font-size:24px}.reading-panel p,.reading-panel li{font-size:15px}.review-summary>div{grid-template-columns:1fr;gap:5px}.augur-inner .section{padding-top:48px;padding-bottom:48px}.augur-inner .package-grid article img{height:230px}}
+@media(max-width:420px){.process-overview .process-grid{grid-template-columns:1fr}.tour-photo-strip{grid-template-columns:1fr}.tour-photo-strip img{height:230px}.booking-flow{padding:20px}.enquiry-steps span{font-size:10px}.booking-send-actions .btn{width:100%}}
