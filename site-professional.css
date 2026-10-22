@@ -19,6 +19,7 @@
 @media(max-width:780px){.wildlife-photo-grid{columns:2;column-gap:12px}.wildlife-photo-grid figure{margin-bottom:12px}}
 .design-credit{overflow-wrap:anywhere}
 .design-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.augur-home .chat-float{width:auto;height:auto;min-height:46px;border-radius:6px}
 .augur-inner{background:var(--cream)}
 .augur-inner .page-hero{padding:82px max(24px,calc((100vw - 1200px)/2));min-height:390px;display:flex;align-items:center;isolation:isolate}
 .augur-inner .page-hero>div{max-width:850px}
