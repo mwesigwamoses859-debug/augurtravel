@@ -7,7 +7,7 @@
   const canonicalUrl = `${siteOrigin}${path}`;
   const description = document.querySelector('meta[name="description"]')?.content
     || "Uganda safaris, gorilla trekking, airport transfers, car hire, and corporate transport from Augur Tours.";
-  const image = `${siteOrigin}/assets/safari/gorilla.webp`;
+  const image = document.querySelector('meta[property="og:image"]')?.content || `${siteOrigin}/assets/safari/gorilla.webp`;
   const ensureMeta = (selector, attributes, content) => {
     let element = document.head.querySelector(selector);
     if (!element) {
@@ -674,6 +674,7 @@ function setGalleryFilter(filter) {
   if (!wildlifePhotoGrid) return;
   galleryFilterButtons.forEach((button) => {
     button.classList.toggle("is-active", button.dataset.galleryFilter === filter);
+    button.setAttribute("aria-pressed", String(button.dataset.galleryFilter === filter));
   });
   wildlifePhotoGrid.querySelectorAll("figure").forEach((figure) => {
     const categories = figure.dataset.galleryCategories?.split(" ") || [];
