@@ -646,6 +646,8 @@ const wildlifePhotoCaptions = [
   "Buffalo and egret at a savannah wallow"
 ];
 
+const wildlifePhotoDimensions = {"1":[468,1040],"2":[496,594],"3":[468,1040],"6":[468,1040],"8":[468,1040],"9":[468,1040],"10":[468,1040],"11":[468,1040],"14":[468,1040],"18":[468,1040],"20":[468,1040],"25":[1040,468],"29":[468,1040],"37":[780,1040],"38":[780,1040],"40":[780,1040],"43":[780,1040],"45":[780,1040],"46":[720,1280],"47":[1280,720],"48":[1280,720],"50":[780,1040],"52":[780,1040],"55":[780,1040],"58":[780,1040],"60":[780,1040],"63":[780,1040],"65":[780,1040],"66":[780,1040]};
+
 const wildlifePhotoSelection = [
   1, 2, 3, 6, 8, 9, 10, 11, 14, 18,
   20, 25, 29, 37, 38, 40, 43, 45, 46, 47,
@@ -697,6 +699,7 @@ if (wildlifePhotoGrid) {
     link.setAttribute("aria-label", `Open full-size photo: ${caption}`);
     image.src = link.href;
     image.alt = caption;
+    [image.width, image.height] = wildlifePhotoDimensions[photoNumber];
     image.loading = "lazy";
     image.decoding = "async";
     figcaption.textContent = caption;

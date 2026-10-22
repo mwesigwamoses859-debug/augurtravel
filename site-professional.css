@@ -1,5 +1,24 @@
 /* Shared page rhythm using the original Augur palette and photographs. */
 [hidden]{display:none!important}
+.augur-home main img{display:block;max-width:100%}
+.augur-home img[src="assets/field/birdwatching-field-team.jpg"]{object-position:50% 68%}
+.augur-home img[src="assets/wildlife/wildlife-30.jpg"]{object-position:50% 46%}
+.augur-home img[src="assets/wildlife/wildlife-65.jpg"]{object-position:50% 68%}
+.augur-home .journey-photo img[src*="zebra-herd-savannah"]{object-position:50% 70%}
+.augur-inner .queen-package-hero{background-position:center 38%}
+.augur-inner .ziwa-package-hero{background-position:center 46%}
+.augur-inner .kivu-package-hero{background-position:center 38%}
+.augur-inner .page-hero p.hero-quote-note{color:var(--green-950)}
+.wildlife-photo-grid{display:block;columns:4;column-gap:16px}
+.wildlife-photo-grid figure{display:block;break-inside:avoid;margin:0 0 16px;box-shadow:none}
+.wildlife-photo-grid a{height:auto}
+.wildlife-photo-grid img{width:100%;height:auto;object-fit:contain}
+.wildlife-photo-grid figcaption{display:block;min-height:0}
+.wildlife-photo-grid a:focus-visible{outline:3px solid var(--gold);outline-offset:-4px}
+@media(max-width:1000px){.wildlife-photo-grid{columns:3}}
+@media(max-width:780px){.wildlife-photo-grid{columns:2;column-gap:12px}.wildlife-photo-grid figure{margin-bottom:12px}}
+.design-credit{overflow-wrap:anywhere}
+.design-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .augur-inner{background:var(--cream)}
 .augur-inner .page-hero{padding:82px max(24px,calc((100vw - 1200px)/2));min-height:390px;display:flex;align-items:center;isolation:isolate}
 .augur-inner .page-hero>div{max-width:850px}
