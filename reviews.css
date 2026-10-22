@@ -1,0 +1,36 @@
+/* Traveller reviews and free Tripadvisor promotion, using Augur's existing palette. */
+.reviews-hero{background:linear-gradient(90deg,rgba(16,45,33,.91),rgba(16,45,33,.46)),url('assets/journeys/zebra-herd-savannah.webp') center 52%/cover;color:var(--white)}
+.reviews-hero h1,.reviews-hero p{color:var(--white)}
+.review-platform-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:28px;align-items:stretch}
+.review-platform-card,.review-planning-card,.review-share-card{border:1px solid var(--border);border-radius:var(--radius);background:var(--white);padding:38px}
+.review-platform-card{border-top:4px solid var(--green-800)}
+.review-platform-card h2,.review-planning-card h2,.review-share-copy h2{font-size:clamp(27px,3vw,38px);line-height:1.15}
+.review-platform-card p:not(.eyebrow),.review-planning-card p,.review-share-copy p{font-size:15px;line-height:1.8;color:var(--muted)}
+.review-platform-card .btn{margin:12px 0 18px}
+.review-platform-card .platform-note{font-size:12px;max-width:540px;margin:0}
+.review-platform-card .text-link{display:inline-block;margin-top:25px;font-size:13px}
+.review-planning-card{background:var(--linen);display:flex;flex-direction:column;justify-content:center}
+.review-planning-card .text-link{margin-top:20px;align-self:flex-start}
+.review-experience-section{background:var(--linen);scroll-margin-top:105px}
+.review-experience-section .section-heading{max-width:760px}
+.feedback-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:30px 0}
+.feedback-steps article{border-top:1px solid var(--border);padding-top:22px}
+.feedback-steps article>span{display:block;color:var(--green-800);font-weight:800;font-size:12px;margin-bottom:14px}
+.feedback-steps h3{font-size:19px;line-height:1.3}
+.feedback-steps p{color:var(--muted);font-size:14px;line-height:1.8}
+.feedback-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.feedback-actions p{max-width:500px;font-size:12px;color:var(--muted);margin:0}
+.review-share-card{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:48px;align-items:center}
+.review-share-copy{max-width:650px}
+.review-share-copy .review-short-link{display:block;font-size:clamp(18px,2.5vw,25px);font-weight:800;color:var(--green-950);overflow-wrap:anywhere;margin:20px 0}
+.review-share-code{margin:0;text-align:center;justify-self:center}
+.review-share-code img{width:210px;height:210px;background:white;padding:0;border:1px solid var(--border)}
+.review-share-code figcaption{font-size:12px;color:var(--muted);margin:12px 0 0}
+.review-share-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.review-share-actions .text-link{font-size:12px}
+.review-copy-status{font-size:12px!important;color:var(--green-800)!important;min-height:1.8em;margin:12px 0 0!important}
+.review-copy>p.tripadvisor-home-note{font-size:12px;margin-top:20px;max-width:400px}
+.about-review-link{margin-top:28px;display:inline-flex;gap:8px;align-items:center;font-weight:700;color:var(--green-800)}
+@media(max-width:760px){.review-platform-grid{grid-template-columns:1fr}.review-platform-card,.review-planning-card,.review-share-card{padding:26px}.feedback-steps{grid-template-columns:1fr;gap:12px}.review-share-card{grid-template-columns:1fr;gap:26px}.review-share-code{justify-self:start}.review-share-code img{width:190px;height:190px}.review-share-actions{align-items:stretch;flex-direction:column}.review-share-actions .btn{justify-content:center;width:100%}.review-share-actions .text-link{align-self:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:white!important;color:#102d21!important}body::before,.skip-link,.site-header,.site-footer,.chat-float{display:none!important}main>section{display:none!important}main>.review-share-section{display:block!important;padding:0!important}.review-share-card{margin:20mm auto;padding:12mm;max-width:165mm;grid-template-columns:1fr;gap:8mm;break-inside:avoid;box-shadow:none}.review-share-code{justify-self:center}.review-share-code img{width:65mm;height:65mm}.review-share-actions,.review-copy-status{display:none!important}.review-share-copy .eyebrow{font-size:12pt}.review-share-copy h2{font-size:27pt}.review-share-copy p{font-size:12pt}.review-share-copy .review-short-link{font-size:19pt}}
