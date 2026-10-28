@@ -1,0 +1,39 @@
+/* Service comparisons and direct enquiries in Augur's existing palette. */
+.augur-pricing{background:var(--linen)}
+.augur-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:28px 0}
+.augur-options article{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:27px}
+.augur-options h3{font-size:20px;margin:0 0 14px;color:var(--green-950)}
+.augur-options p,.augur-pricing>p{font-size:15px;line-height:1.85}
+.augur-options a,.augur-proof a{color:var(--green-800);text-decoration:underline;text-underline-offset:3px}
+.augur-table-wrap{overflow-x:auto;margin:28px 0;border:1px solid var(--border);border-radius:8px;background:var(--white)}
+.augur-compare{width:100%;border-collapse:collapse;text-align:left;font-size:14px;line-height:1.7}
+.augur-compare caption{text-align:left;font-weight:700;padding:18px 22px;background:var(--white)}
+.augur-compare th,.augur-compare td{vertical-align:top;padding:18px 22px;border-top:1px solid var(--border)}
+.augur-compare thead{background:var(--green-950);color:var(--white)}
+.augur-compare tbody th{width:25%;min-width:130px;color:var(--green-950)}
+.augur-compare tbody tr:nth-child(even){background:var(--cream)}
+.augur-pricing-note{margin:22px 0}
+.augur-proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.augur-proof figure{margin:0;background:var(--white);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.augur-proof figure img{width:100%;height:310px;object-fit:cover}
+.augur-proof figcaption{font-size:13px;line-height:1.7;padding:18px 22px}
+.augur-proof-copy h3{font-size:27px;line-height:1.25}
+.augur-proof-copy p{font-size:15px;line-height:1.85}
+.augur-inline-links{display:grid;gap:15px;margin:24px 0;font-size:14px;font-weight:700}
+.augur-contact-line{border-top:1px solid var(--border);padding-top:20px}
+.augur-direct-layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(250px,.8fr);gap:32px;align-items:start}
+.augur-direct-form{min-width:0;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:30px 18px}
+.augur-direct-form>h2,.augur-direct-form>p{margin-left:14px;margin-right:14px}
+.augur-direct-form h2{font-size:32px;line-height:1.2}
+.augur-direct-form>p{font-size:14px;line-height:1.85}
+#augur-direct-form{border:0;width:100%;height:1180px;display:block;background:#eef3f0;border-radius:6px;margin-top:22px}
+.augur-direct-layout .booking-help .btn{color:var(--green-950);text-align:center;justify-content:center}
+.augur-builder-details{border-top:1px solid var(--border);padding-top:25px}
+.augur-builder-details>summary{font-size:19px;font-weight:700;color:var(--green-950);cursor:pointer;margin-bottom:25px}
+.augur-builder-details .enquiry-shell{margin-top:25px}
+.augur-home-direct{border-bottom:1px solid var(--border);padding-bottom:25px;margin-bottom:24px;grid-column:1/-1}
+.augur-home-direct h3{font-size:24px;margin:0 0 12px}
+.augur-home-direct p{font-size:14px;line-height:1.7}
+.augur-home-direct .btn{margin:8px 0}
+@media(max-width:1000px){.augur-options{grid-template-columns:1fr}.augur-direct-layout{grid-template-columns:1fr}.augur-direct-layout .booking-help{max-width:none}.augur-proof-grid{gap:25px}}
+@media(max-width:780px){.augur-proof-grid{grid-template-columns:1fr}.augur-proof figure img{height:250px}.augur-options article{padding:23px}.augur-compare th,.augur-compare td{padding:14px}.augur-direct-form{padding:24px 0}.augur-direct-form>h2,.augur-direct-form>p{margin-left:20px;margin-right:20px}#augur-direct-form{height:1320px;border-radius:0}.augur-direct-form h2{font-size:28px}.augur-proof-copy h3{font-size:25px}.augur-builder-details>summary{font-size:17px}}

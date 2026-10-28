@@ -112,7 +112,7 @@ const destinationData = {
     image: "assets/safari/gorilla.webp",
     copy: "Bwindi & Mgahinga | Expert Guides | Once-in-a-Lifetime Experience",
     route: "Route note: Best planned from Entebbe, Kampala, Kabale, or Kigali depending on permit date and lodge location.",
-    quote: "From quote - final price depends on gorilla permits, lodge level, vehicle, dates, and group size.",
+    quote: "Tailored quotation - final price depends on gorilla permits, lodge level, vehicle, dates, and group size.",
     highlights: ["Best for mountain gorilla trekking", "Expert guide coordination", "Permit and transport support"]
   },
   murchison: {
@@ -122,7 +122,7 @@ const destinationData = {
     image: "assets/wildlife/wildlife-25.jpg",
     copy: "Giraffes, elephants, hartebeests, patas monkeys, Nile boat cruises, waterfalls, bird watching, and game drives.",
     route: "Route note: Kampala to Murchison Falls is usually 5-6 hours; Entebbe is usually 6-7 hours depending on stops.",
-    quote: "From quote - final price depends on lodge level, vehicle, boat cruise, park activities, dates, and group size.",
+    quote: "Tailored quotation - final price depends on lodge level, vehicle, boat cruise, park activities, dates, and group size.",
     highlights: ["Giraffes on savannah ridges", "Elephant crossings and Nile launch trip", "Patas monkeys, hartebeests, buffaloes, and antelopes"]
   },
   queen: {
@@ -132,7 +132,7 @@ const destinationData = {
     image: "assets/wildlife/wildlife-49.jpg",
     copy: "Kazinga Channel, elephant herds, crater lakes, salt pans, Kasenyi game drives, Kyambura Gorge, and Ishasha wildlife.",
     route: "Route note: Kampala to Queen Elizabeth is usually 7-8 hours; Ishasha or Bwindi can be added with extra time.",
-    quote: "From quote - final price depends on vehicle, lodge level, Kazinga boat timing, game drives, dates, and group size.",
+    quote: "Tailored quotation - final price depends on vehicle, lodge level, Kazinga boat timing, game drives, dates, and group size.",
     highlights: ["Elephant herds, hippos, buffaloes, and antelopes", "Crater lakes and salt pans", "Kazinga Channel, Kasenyi, and Ishasha"]
   },
   jinja: {
@@ -142,7 +142,7 @@ const destinationData = {
     image: "assets/safari/boat-cruise.webp",
     copy: "Source of the Nile | Water sports | Day trips | Group travel",
     route: "Route note: Kampala to Jinja is usually 2-3 hours depending on traffic and activity timing.",
-    quote: "From quote - final price depends on activities, vehicle, pickup point, dates, and group size.",
+    quote: "Tailored quotation - final price depends on activities, vehicle, pickup point, dates, and group size.",
     highlights: ["Water activity planning", "Source of the Nile visits", "Short-stay transfers"]
   },
   kibale: {
@@ -152,7 +152,7 @@ const destinationData = {
     image: "assets/safari/chimpanzee.webp",
     copy: "Kibale Forest | Chimpanzee habituation | Primate walks | Expert guides",
     route: "Route note: Kampala to Kibale is usually 5-6 hours; it pairs well with crater lakes and Queen Elizabeth.",
-    quote: "From quote - final price depends on permits, activity type, lodge level, vehicle, dates, and group size.",
+    quote: "Tailored quotation - final price depends on permits, activity type, lodge level, vehicle, dates, and group size.",
     highlights: ["Chimpanzee habituation experience", "Chimpanzee tracking", "Western safari combinations"]
   },
   mburo: {
@@ -162,7 +162,7 @@ const destinationData = {
     image: "assets/wildlife/wildlife-64.jpg",
     copy: "Lake Mburo | Zebra and antelope | Short safaris | Active adventures",
     route: "Route note: Kampala to Lake Mburo is usually 4-5 hours; it works well as a short escape or western route stop.",
-    quote: "From quote - final price depends on vehicle, lodge level, boat or walking safari plans, dates, and group size.",
+    quote: "Tailored quotation - final price depends on vehicle, lodge level, boat or walking safari plans, dates, and group size.",
     highlights: ["Zebra, impala, and eland", "Short safari routes", "Western Uganda stopover"]
   },
   rwenzori: {
@@ -172,7 +172,7 @@ const destinationData = {
     image: "assets/destinations/rwenzori-mountains.jpg",
     copy: "Rwenzori Mountains | Scenic walks | Multi-day treks | Summit expeditions",
     route: "Route note: Best planned through Kasese with timing shaped around trek length, fitness, guides, and accommodation.",
-    quote: "From quote - final price depends on trek length, guide support, accommodation, transport, dates, and group size.",
+    quote: "Tailored quotation - final price depends on trek length, guide support, accommodation, transport, dates, and group size.",
     highlights: ["Mountain and foothill hikes", "Multi-day trekking", "Guide and transport coordination"]
   },
   elgon: {
@@ -182,7 +182,7 @@ const destinationData = {
     image: "assets/packages/sipi-falls.jpg",
     copy: "Mount Elgon | Sipi Falls | Hiking | Coffee and cultural experiences",
     route: "Route note: Kampala to Sipi is usually 5-6 hours; route timing depends on hike choice and coffee experiences.",
-    quote: "From quote - final price depends on hikes, guide support, accommodation, vehicle, dates, and group size.",
+    quote: "Tailored quotation - final price depends on hikes, guide support, accommodation, vehicle, dates, and group size.",
     highlights: ["Waterfall and forest walks", "Mountain trekking", "Sipi coffee experiences"]
   },
   rwanda: {
@@ -192,7 +192,7 @@ const destinationData = {
     image: "assets/safari/gorilla.webp",
     copy: "Volcanoes National Park, Kigali, Akagera, Nyungwe, Lake Kivu boat journeys, and Uganda-Rwanda cross-border planning.",
     route: "Route note: Best planned from Kigali, Kabale, or a Uganda-Rwanda border route depending on permits and timing.",
-    quote: "From quote - final price depends on permits, hotels, transport, border timing, dates, and group size.",
+    quote: "Tailored quotation - final price depends on permits, hotels, transport, border timing, dates, and group size.",
     highlights: ["Volcanoes National Park", "Lake Kivu boat and lakeside add-ons", "Kigali and cross-border planning"]
   },
   kidepo: {
@@ -202,7 +202,7 @@ const destinationData = {
     image: "assets/packages/north-eastern.webp",
     copy: "Kidepo Valley | Remote wilderness | Culture | North Eastern Uganda",
     route: "Route note: Kidepo is a long northern Uganda route and is best planned as a multi-day safari or fly-in option.",
-    quote: "From quote - final price depends on transport style, lodge level, route length, dates, and group size.",
+    quote: "Tailored quotation - final price depends on transport style, lodge level, route length, dates, and group size.",
     highlights: ["Remote safari planning", "Cultural visits", "Multi-day wilderness routes"]
   },
   bunyonyi: {
@@ -212,7 +212,7 @@ const destinationData = {
     image: "assets/safari/lake-bunyonyi.webp",
     copy: "Lake Bunyonyi | Southern Uganda | Calm stays | Scenic island routes",
     route: "Route note: Kampala to Lake Bunyonyi is usually 7-8 hours; it pairs well with Kabale, Bwindi, and Rwanda routes.",
-    quote: "From quote - final price depends on transport, lodge level, boat plans, dates, and group size.",
+    quote: "Tailored quotation - final price depends on transport, lodge level, boat plans, dates, and group size.",
     highlights: ["Relaxed lakeside stays", "Southern region tours", "Bwindi route combinations"]
   },
   volcanoes: {
@@ -222,7 +222,7 @@ const destinationData = {
     image: "assets/safari/gorilla.webp",
     copy: "Rwanda Volcanoes | Gorilla trekking | Kigali connections | Cross-border tours",
     route: "Route note: Kigali to Volcanoes is usually 2-3 hours; Uganda border routes can also connect through south-western Uganda.",
-    quote: "From quote - final price depends on gorilla permits, lodge level, vehicle, dates, and group size.",
+    quote: "Tailored quotation - final price depends on gorilla permits, lodge level, vehicle, dates, and group size.",
     highlights: ["Gorilla trekking", "Kigali city connection", "Cross-border travel support"]
   },
   akagera: {
@@ -232,7 +232,7 @@ const destinationData = {
     image: "assets/wildlife/wildlife-64.jpg",
     copy: "Akagera National Park | Wildlife drives | Lake Ihema boat trips | Rwanda safari add-ons",
     route: "Route note: Kigali to Akagera is usually 2.5-3.5 hours depending on pickup point and park timing.",
-    quote: "From quote - final price depends on vehicle, lodge level, game drive timing, boat plans, dates, and group size.",
+    quote: "Tailored quotation - final price depends on vehicle, lodge level, game drive timing, boat plans, dates, and group size.",
     highlights: ["Wildlife game drives", "Lake Ihema boat trip", "Kigali safari add-on"]
   },
   nyungwe: {
@@ -242,7 +242,7 @@ const destinationData = {
     image: "assets/safari/chimpanzee.webp",
     copy: "Nyungwe National Park | Chimpanzee tracking | Forest walks | Rwanda nature routes",
     route: "Route note: Kigali to Nyungwe is usually 5-6 hours; it pairs well with Lake Kivu and southern Rwanda routes.",
-    quote: "From quote - final price depends on permits, accommodation, transport, forest activities, dates, and group size.",
+    quote: "Tailored quotation - final price depends on permits, accommodation, transport, forest activities, dates, and group size.",
     highlights: ["Chimpanzee tracking", "Canopy and forest experiences", "Lake Kivu route pairing"]
   },
   kivu: {
@@ -252,7 +252,7 @@ const destinationData = {
     image: "assets/wildlife/wildlife-01.jpg",
     copy: "Lake Kivu | Scenic boat journeys | Lakeside stays | Relaxed Rwanda extensions",
     route: "Route note: Kigali to Lake Kivu is usually 3-4 hours; Volcanoes to Lake Kivu is often 2-3 hours.",
-    quote: "From quote - final price depends on hotel level, boat plan, route start, dates, and group size.",
+    quote: "Tailored quotation - final price depends on hotel level, boat plan, route start, dates, and group size.",
     highlights: ["Scenic boat journey", "Lakeside relaxation", "Add-on after Kigali, Volcanoes, or Nyungwe"]
   },
   kigali: {
@@ -262,7 +262,7 @@ const destinationData = {
     image: "assets/safari/culture.webp",
     copy: "Kigali city tours | Cultural experiences | Rwanda travel planning",
     route: "Route note: Kigali city experiences can be planned around airport arrivals, business travel, or Rwanda safari starts.",
-    quote: "From quote - final price depends on transport, guide time, stops, dates, and group size.",
+    quote: "Tailored quotation - final price depends on transport, guide time, stops, dates, and group size.",
     highlights: ["City sightseeing", "Cultural visits", "Short Rwanda itinerary planning"]
   },
   zziwa: {
@@ -272,7 +272,7 @@ const destinationData = {
     image: "assets/wildlife/wildlife-30.jpg",
     copy: "Guided rhino tracking, conservation learning, and a practical stopover on Kampala or Entebbe routes to Murchison Falls.",
     route: "Route note: Kampala to Ziwa is usually 3-4 hours; Entebbe to Ziwa is usually 4-5 hours.",
-    quote: "From quote - final price depends on pickup point, vehicle, tracking plan, dates, and group size.",
+    quote: "Tailored quotation - final price depends on pickup point, vehicle, tracking plan, dates, and group size.",
     highlights: ["Guided on-foot rhino tracking", "Conservation learning", "Kampala, Entebbe, and Murchison route pairing"]
   }
 };
@@ -385,7 +385,7 @@ function setDestinationDetail(id) {
   if (title) title.textContent = item.title;
   if (copy) copy.textContent = item.copy;
   if (route) route.innerHTML = `<strong>Route note:</strong> ${(item.route || "").replace(/^Route note:\s*/i, "")}`;
-  if (quote) quote.textContent = item.quote || "From quote - final price depends on route, dates, vehicle, and group size.";
+  if (quote) quote.textContent = item.quote || "Tailored quotation - final price depends on route, dates, vehicle, and group size.";
   if (list) {
     list.innerHTML = "";
     item.highlights.forEach((highlight) => {
