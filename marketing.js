@@ -12,8 +12,8 @@
   const fallback=document.querySelector('#augur-form-fallback');
   if(directForm&&(selectedService||requestedTrip)){
     const url=new URL(directForm.src);
-    if(selectedService)url.searchParams.set('entry.1375294032',selectedService);
-    if(requestedTrip)url.searchParams.set('entry.1651185533','Trip: '+requestedTrip);
+    if(selectedService)url.searchParams.set('entry.1651185533',selectedService);
+    if(requestedTrip)url.searchParams.set('entry.1375294032','Trip: '+requestedTrip);
     directForm.src=url.href;
     if(fallback){const link=new URL(url.href);link.searchParams.delete('embedded');fallback.href=link.href;}
     const note=document.querySelector('#enquiry-service-note');
