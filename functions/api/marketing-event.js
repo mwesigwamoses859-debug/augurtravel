@@ -1,5 +1,5 @@
 const EVENTS=new Set(['page_view','quote_click','whatsapp_click','phone_click','enquiry_form_view','profile_download']);
-const SERVICES=new Set(['general','safari','gorilla','transfer','car','hotel','corporate','rwanda','custom']);
+const SERVICES=new Set(['general','safari','murchison','queen','gorilla','transfer','car','hotel','corporate','rwanda','custom']);
 const SOURCES=new Set(['google','bing','tripadvisor','safaribookings','facebook','instagram','partner','direct','other','qa']);
 const HEADERS={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'};
 

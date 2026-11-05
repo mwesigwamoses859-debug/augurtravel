@@ -19,6 +19,7 @@ function context(body=valid,options={}){
   return {writes,request,env};
 }
 test('records only allowed categorical fields in daily totals',async()=>{const c=context();const r=await onRequest(c);assert.equal(r.status,204);assert.equal(c.writes.length,1);assert.deepEqual(c.writes[0].args.slice(1),['whatsapp_click','safari','google']);assert.match(c.writes[0].args[0],/^\d{4}-\d{2}-\d{2}$/);});
+test('accepts the named safari categories without accepting arbitrary trip details',async()=>{for(const service of ['murchison','queen','gorilla']){const c=context({...valid,service});assert.equal((await onRequest(c)).status,204);assert.equal(c.writes[0].args[2],service);}});
 test('does not accept personal enquiry fields in measurements',async()=>{const c=context({...valid,email:'test@example.com'});assert.equal((await onRequest(c)).status,400);assert.equal(c.writes.length,0);});
 test('rejects arbitrary route and source strings',async()=>{for(const body of [{...valid,service:'private-trip-details'},{...valid,source:'https://example.com/private'}]){const c=context(body);assert.equal((await onRequest(c)).status,400);assert.equal(c.writes.length,0);}});
 test('does not expose the metric register through GET',async()=>{const c=context(valid,{method:'GET'});const r=await onRequest(c);assert.equal(r.status,405);assert.equal(await r.text(),'');});

@@ -1,13 +1,14 @@
 /* Only categorical aggregate measurements are sent; enquiry contents stay in the form. */
 (() => {
   const serviceNames={Safari:'safari','Gorilla trekking':'gorilla','Airport transfer':'transfer','Car hire':'car','Hotel booking':'hotel','Corporate transport':'corporate','Rwanda tour':'rwanda','Custom journey':'custom'};
-  const pageServices={'murchison-falls-safari':'safari','queen-elizabeth-safari':'safari','ziwa-rhino-tracking':'safari','gorilla-trekking-uganda':'gorilla','airport-transfers':'transfer','corporate-transport':'corporate','travel-partners':'corporate','car-hire':'car','hotels':'hotel','rwanda-tours':'rwanda','packages':'safari','wild-tours':'safari'};
+  const pageServices={'murchison-falls-safari':'murchison','queen-elizabeth-safari':'queen','uganda-weekend-trips':'safari','ziwa-rhino-tracking':'safari','gorilla-trekking-uganda':'gorilla','airport-transfers':'transfer','corporate-transport':'corporate','travel-partners':'corporate','car-hire':'car','hotels':'hotel','rwanda-tours':'rwanda','packages':'safari','wild-tours':'safari'};
   const params=new URLSearchParams(location.search);
   const requestedService=params.get('service');
   const selectedService=Object.hasOwn(serviceNames,requestedService)?requestedService:'';
   const requestedTrip=(params.get('trip')||'').replace(/[\r\n]/g,' ').slice(0,180).trim();
   const path=location.pathname.replace(/^\//,'').replace(/\.html$/,'').replace(/\/$/,'');
-  const pageService=pageServices[path]||serviceNames[selectedService]||'general';
+  const tripService=trip=>/murchison/i.test(trip)?'murchison':/queen elizabeth/i.test(trip)?'queen':/bwindi|gorilla/i.test(trip)?'gorilla':'';
+  const pageService=pageServices[path]||tripService(requestedTrip)||serviceNames[selectedService]||'general';
   const directForm=document.querySelector('#augur-direct-form');
   const fallback=document.querySelector('#augur-form-fallback');
   if(directForm&&(selectedService||requestedTrip)){
@@ -54,7 +55,7 @@
   document.addEventListener('click',event=>{
     const a=event.target.closest?.('a[href]');if(!a)return;
     const url=new URL(a.href,location.href);
-    const service=serviceNames[url.searchParams.get('service')]||pageService;
+    const service=tripService(url.searchParams.get('trip')||'')||serviceNames[url.searchParams.get('service')]||pageService;
     if(url.hostname==='wa.me'||url.hostname==='api.whatsapp.com')record('whatsapp_click',service);
     else if(url.protocol==='tel:')record('phone_click',service);
     else if(url.origin===location.origin&&url.pathname.replace(/\.html$/,'')==='/booking-request')record('quote_click',service);

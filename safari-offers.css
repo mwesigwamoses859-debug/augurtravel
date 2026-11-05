@@ -1,0 +1,24 @@
+.safari-offers{background:var(--linen,#f6f3ec)}
+.safari-offers .section-heading{max-width:780px}
+.offer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:30px 0}
+.offer-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--border,#d8dfd8);border-radius:10px;overflow:hidden}
+.offer-card>img{width:100%;height:200px;object-fit:cover}
+.offer-card-body{padding:26px;display:flex;flex-direction:column;flex:1}
+.offer-card h3{font-size:25px;line-height:1.25;margin:5px 0 18px;color:var(--green-950,#17372e)}
+.offer-price{font-size:29px!important;font-weight:700;color:var(--green-950,#17372e);line-height:1.2!important;margin:0 0 8px}
+.offer-basis{font-size:13px!important;line-height:1.65!important;margin:0 0 18px;color:#475b51}
+.offer-card p,.offer-card li,.offer-detail p,.offer-detail li{font-size:15px;line-height:1.8}
+.offer-card ul{padding-left:19px;margin:0 0 25px}
+.offer-card .btn{margin-top:auto;align-self:flex-start}
+.offer-note{max-width:940px;font-size:14px;line-height:1.85;border-left:3px solid var(--gold,#b08a4a);padding:8px 0 8px 20px}
+.offer-note a,.offer-detail a:not(.btn),.offer-audiences a{color:var(--green-800,#275342);text-decoration:underline;text-underline-offset:3px}
+.offer-audiences{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:24px;font-size:15px;font-weight:700}
+.offer-detail-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;margin:28px 0}
+.offer-detail-grid>div{padding:25px;background:#fff;border:1px solid var(--border,#d8dfd8);border-radius:8px}
+.offer-detail h3{font-size:22px;color:var(--green-950,#17372e);margin:0 0 14px}
+.offer-detail ul{padding-left:20px;margin:0}
+.offer-detail .offer-price{font-size:34px!important}
+.offer-season{padding:15px 18px;background:#e8f0e9;border-radius:6px}
+.offer-local-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:1000px){.offer-grid{grid-template-columns:1fr}.offer-card{display:grid;grid-template-columns:35% 1fr}.offer-card>img{height:100%;min-height:260px}.offer-detail-grid{gap:22px}}
+@media(max-width:700px){.offer-card{display:flex}.offer-card>img{height:190px;min-height:0}.offer-detail-grid{grid-template-columns:1fr}.offer-card-body{padding:23px}.offer-price{font-size:27px!important}.offer-detail .offer-price{font-size:30px!important}.offer-audiences{flex-direction:column;gap:16px}}
