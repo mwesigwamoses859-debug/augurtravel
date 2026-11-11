@@ -336,7 +336,7 @@ function updateSafariFinderLink() {
   const duration = finderDuration?.value || "custom duration";
   const travelers = finderTravelers?.value || "2";
   const text = `Hello Augur Tours, I would like a quote for ${activity} in ${destination} for ${duration}. We are ${travelers} traveler(s).`;
-  safariFinderLink.href = `https://wa.me/256772510411?text=${encodeURIComponent(text)}`;
+  safariFinderLink.href = `https://wa.me/256779120189?text=${encodeURIComponent(text)}`;
 }
 
 [finderDestination, finderActivity, finderDuration, finderTravelers].forEach((element) => {
@@ -564,7 +564,7 @@ function updateContactWhatsappLink() {
   const budget = contactBudget?.value || "Not sure yet";
   const message = contactMessage?.value?.trim() || "Please help me plan my trip.";
   const text = `Hello Augur Tours, my name is ${name}. I have a ${type} enquiry. Travel month: ${month}. Trip length: ${duration}. Travelers: ${travelers}. Budget guide: ${budget}. You can reach me through ${reach}. ${message}`;
-  contactWhatsappLink.href = `https://wa.me/256772510411?text=${encodeURIComponent(text)}`;
+  contactWhatsappLink.href = `https://wa.me/256779120189?text=${encodeURIComponent(text)}`;
 }
 
 [contactName, contactReach, contactType, contactMonth, contactDuration, contactTravelers, contactBudget, contactMessage].forEach((element) => {
@@ -874,7 +874,7 @@ function updateTripSummary() {
       <div><dt>Start</dt><dd>${data.start}</dd></div>
     </dl>`;
   const message = `Hello Augur Tours, I built a safari brief. Destinations: ${destinations}. Main experience: ${data.experience}. Duration: ${data.duration}. Travel month: ${data.month}. Travelers: ${data.travelers}. Comfort level: ${data.comfort}. Starting point: ${data.start}. Notes: ${data.notes}. Please check route logic, availability, permits, and prepare a quotation.`;
-  plannerWhatsapp.href = `https://wa.me/256772510411?text=${encodeURIComponent(message)}`;
+  plannerWhatsapp.href = `https://wa.me/256779120189?text=${encodeURIComponent(message)}`;
 }
 
 tripBuilderForm?.addEventListener("input", updateTripSummary);

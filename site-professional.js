@@ -14,7 +14,7 @@
   document.querySelectorAll('form.quote-form').forEach(form=>{
     const link=form.querySelector('a[href^="https://wa.me/"]');
     if(!link)return;
-    const update=()=>{const details=[...form.querySelectorAll('input,select,textarea')].map(el=>{const label=el.closest('label')?.querySelector('span')?.textContent||el.name||'Details';return label+': '+el.value.trim();}).filter(Boolean);link.href='https://wa.me/256772510411?text='+encodeURIComponent('Hello Augur Tours, '+(form.querySelector('h2')?.textContent||'travel enquiry')+'\n'+details.join('\n'));};
+    const update=()=>{const details=[...form.querySelectorAll('input,select,textarea')].map(el=>{const label=el.closest('label')?.querySelector('span')?.textContent||el.name||'Details';return label+': '+el.value.trim();}).filter(Boolean);link.href='https://wa.me/256779120189?text='+encodeURIComponent('Hello Augur Tours, '+(form.querySelector('h2')?.textContent||'travel enquiry')+'\n'+details.join('\n'));};
     form.addEventListener('input',update);form.addEventListener('change',update);update();
     form.addEventListener('submit',e=>{e.preventDefault();if(form.reportValidity())link.click();});
     link.addEventListener('click',e=>{if(!form.reportValidity())e.preventDefault();});
