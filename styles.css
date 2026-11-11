@@ -1582,12 +1582,38 @@ h3 {
   backdrop-filter: blur(4px);
 }
 
+.footer-social-inline .footer-social-icons {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+}
+
+.footer-grid .footer-social-inline a.social-icon-link,
 .footer-social-inline .social-icon-link {
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  justify-content: center;
-  border-radius: 50%;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+  border: 1.5px solid rgba(255, 253, 247, 0.28) !important;
+  background: rgba(255, 253, 247, 0.1) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
 }
 
 .social-icon-link svg {
@@ -1596,50 +1622,65 @@ h3 {
   transition: transform 0.25s ease;
 }
 
+.footer-grid .footer-social-inline a.social-icon-link svg,
+.footer-social-inline .social-icon-link svg {
+  width: 20px !important;
+  height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+  display: block !important;
+  margin: auto !important;
+  flex-shrink: 0 !important;
+  pointer-events: none !important;
+  transform: none !important;
+}
+
 .social-icon-link:hover,
 .social-icon-link:focus-visible {
   transform: translateY(-2px);
   color: #ffffff;
 }
 
-.social-icon-link:hover svg {
-  transform: scale(1.12);
+.social-icon-link:hover svg,
+.footer-social-inline .social-icon-link:hover svg,
+.footer-social-inline .social-icon-link:focus-visible svg {
+  transform: scale(1.14) !important;
 }
 
 .social-icon-link.social-facebook:hover,
 .social-icon-link.social-facebook:focus-visible {
-  background: #1877F2;
-  border-color: #1877F2;
-  box-shadow: 0 4px 16px rgba(24, 119, 242, 0.45);
+  background: #1877F2 !important;
+  border-color: #1877F2 !important;
+  box-shadow: 0 4px 16px rgba(24, 119, 242, 0.45) !important;
 }
 
 .social-icon-link.social-tiktok:hover,
 .social-icon-link.social-tiktok:focus-visible {
-  background: #000000;
-  border-color: #fe2c55;
-  box-shadow: -2px -2px 10px rgba(37, 244, 238, 0.45), 2px 2px 10px rgba(254, 44, 85, 0.45);
+  background: #000000 !important;
+  border-color: #fe2c55 !important;
+  box-shadow: -2px -2px 10px rgba(37, 244, 238, 0.45), 2px 2px 10px rgba(254, 44, 85, 0.45) !important;
 }
 
 .social-icon-link.social-youtube:hover,
 .social-icon-link.social-youtube:focus-visible {
-  background: #FF0000;
-  border-color: #FF0000;
-  box-shadow: 0 4px 16px rgba(255, 0, 0, 0.45);
+  background: #FF0000 !important;
+  border-color: #FF0000 !important;
+  box-shadow: 0 4px 16px rgba(255, 0, 0, 0.45) !important;
 }
 
 .social-icon-link.social-whatsapp:hover,
 .social-icon-link.social-whatsapp:focus-visible {
-  background: #25D366;
-  border-color: #25D366;
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45) !important;
 }
 
 .social-icon-link.social-email:hover,
 .social-icon-link.social-email:focus-visible {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--green-950);
-  box-shadow: 0 4px 16px rgba(212, 163, 75, 0.4);
+  background: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--green-950) !important;
+  box-shadow: 0 4px 16px rgba(212, 163, 75, 0.4) !important;
 }
 
 @media (max-width: 680px) {
@@ -1649,9 +1690,22 @@ h3 {
   .footer-social-bar .footer-social-icons {
     justify-content: flex-start;
   }
-  .social-icon-link {
+  .footer-social-bar .social-icon-link {
     padding: 7px 12px;
     font-size: 0.82rem;
+  }
+  .footer-grid .footer-social-inline a.social-icon-link,
+  .footer-social-inline .social-icon-link {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    padding: 0 !important;
+  }
+  .footer-grid .footer-social-inline a.social-icon-link svg,
+  .footer-social-inline .social-icon-link svg {
+    width: 19px !important;
+    height: 19px !important;
   }
 }
 
