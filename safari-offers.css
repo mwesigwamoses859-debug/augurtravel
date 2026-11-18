@@ -22,3 +22,50 @@
 .offer-local-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:1000px){.offer-grid{grid-template-columns:1fr}.offer-card{display:grid;grid-template-columns:35% 1fr}.offer-card>img{height:100%;min-height:260px}.offer-detail-grid{gap:22px}}
 @media(max-width:700px){.offer-card{display:flex}.offer-card>img{height:190px;min-height:0}.offer-detail-grid{grid-template-columns:1fr}.offer-card-body{padding:23px}.offer-price{font-size:27px!important}.offer-detail .offer-price{font-size:30px!important}.offer-audiences{flex-direction:column;gap:16px}}
+
+.safari-rates {
+  background: var(--white);
+}
+.safari-rate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.safari-rate-list a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 8px;
+  padding: 20px 0 8px;
+  border-top: 2px solid var(--gold);
+  color: var(--green-950);
+  text-decoration: none;
+}
+.rate-duration {
+  font-size: .85rem;
+  font-weight: 700;
+}
+.rate-name { font-size: 1.25rem; }
+.rate-price { font-size: 1.1rem; font-weight: 700; }
+.rate-price span { font-size: .9rem; font-weight: 400; }
+.rate-link {
+  margin-top: auto;
+  padding-top: 6px;
+  font-size: .9rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.safari-rate-list a:is(:hover, :focus-visible) .rate-name { text-decoration: underline; }
+.augur-inner .safari-itinerary-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+.safari-itinerary-grid:has(> article:not(.is-filtered-out)) { margin-bottom: 24px; }
+.augur-inner .safari-itinerary-grid .itinerary-rate { color: var(--green-950); }
+.itinerary-rate strong { display: block; font-size: 1.35rem; }
+.augur-inner .package-grid > article.is-filtered-out { display: none; }
+#safari-itineraries, .safari-itinerary-grid article, #uganda-safari-prices, #safari-offers {
+  scroll-margin-top: 96px;
+}
