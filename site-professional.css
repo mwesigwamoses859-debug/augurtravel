@@ -1,7 +1,7 @@
 /* Shared page rhythm using the original Augur palette and photographs. */
 [hidden]{display:none!important}
 .augur-home main img{display:block;max-width:100%}
-.augur-home img[src="assets/field/birdwatching-field-team.jpg"]{object-position:50% 68%}
+.augur-home img[src="assets/field/birdwatching-field-team.webp"]{object-position:50% 68%}
 .augur-home img[src="assets/wildlife/wildlife-30.jpg"]{object-position:50% 46%}
 .augur-home img[src="assets/wildlife/wildlife-65.jpg"]{object-position:50% 68%}
 .augur-home .journey-photo img[src*="zebra-herd-savannah"]{object-position:50% 70%}

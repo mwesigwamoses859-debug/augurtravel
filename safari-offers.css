@@ -69,3 +69,17 @@
 #safari-itineraries, .safari-itinerary-grid article, #uganda-safari-prices, #safari-offers {
   scroll-margin-top: 96px;
 }
+
+.group-rates {
+  margin: 0 0 10px;
+  color: var(--green-950);
+}
+.group-rates > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.group-rates dd { margin: 0; font-size: 1.3rem; font-weight: 700; }

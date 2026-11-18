@@ -7,13 +7,30 @@
   const params=new URLSearchParams(location.search);
   const service=params.get('service');if(service&&[...field('service').options].some(o=>o.value===service))field('service').value=service;
   field('trip').value=(params.get('trip')||'').slice(0,180);
-  const quickQuote = document.querySelector('#quick-quote-whatsapp');
-  const enquirySubject = [field('service').value, field('trip').value.trim()].filter(Boolean).join(' — ');
-  if (quickQuote && enquirySubject) {
-    const url = new URL(quickQuote.href);
-    url.searchParams.set('text', 'Hello Augur Tours, please send me a quotation for ' + enquirySubject + '.');
-    quickQuote.href = url.href;
+  const groupSize = params.get('party');
+  if (groupSize === '2' || groupSize === '4') {
+    field('adults').value = groupSize;
   }
+  const quickQuote = document.querySelector('#quick-quote-whatsapp');
+  const quickEmail = document.querySelector('#quick-quote-email');
+  const bookingEmail = 'mnakibuuka@augurtravel.com';
+  function updateQuickLinks() {
+    const subject = [field('service').value, field('trip').value.trim()].filter(Boolean).join(' — ');
+    const message = subject
+      ? 'Hello Augur Tours, please send me a quotation for ' + subject + '.'
+      : 'Hello Augur Tours, please send me a travel quote.';
+    if (quickQuote) {
+      const url = new URL(quickQuote.href);
+      url.searchParams.set('text', message);
+      quickQuote.href = url.href;
+    }
+    if (quickEmail) {
+      quickEmail.href = 'mailto:' + bookingEmail + '?subject=Travel%20quotation%20request&body=' + encodeURIComponent(message);
+    }
+  }
+  field('service').addEventListener('change', updateQuickLinks);
+  field('trip').addEventListener('input', updateQuickLinks);
+  updateQuickLinks();
   const today=new Date();const localDate=[today.getFullYear(),String(today.getMonth()+1).padStart(2,'0'),String(today.getDate()).padStart(2,'0')].join('-');field('start').min=localDate;field('end').min=localDate;
   field('start').addEventListener('change',()=>{field('end').min=field('start').value||localDate;field('end').setCustomValidity('');});
   field('end').addEventListener('change',()=>field('end').setCustomValidity(''));
@@ -28,7 +45,7 @@
   const labels={service:'Service',trip:'Destination / trip',start:'Start date',end:'End date',adults:'Adults',children:'Children',comfort:'Travel style',budget:'Budget guide',route:'Pickup / flight / rooms',notes:'Other preferences',name:'Name',contact:'Contact',country:'Country',reply:'Preferred reply'};
   function data(){return Object.fromEntries(Object.keys(labels).map(k=>[k,field(k).value.trim()]));}
   let requestText='';
-  function review(){const values=data();const root=document.querySelector('#booking-review');root.replaceChildren();for(const [key,label]of Object.entries(labels)){const row=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=values[key]||(['start','end'].includes(key)?'Flexible / to discuss':'Not specified');row.append(dt,dd);root.append(row);}requestText='Hello Augur Tours, please prepare a travel quotation.\n\n'+Object.entries(labels).map(([k,l])=>l+': '+(values[k]||'To discuss')).join('\n')+'\n\nPlease confirm availability, inclusions, total price and booking conditions.';document.querySelector('#booking-send-whatsapp').href='https://wa.me/256779120189?text='+encodeURIComponent(requestText);document.querySelector('#booking-send-email').href='mailto:mnakibuuka@augurtravel.com?subject='+encodeURIComponent('Travel quotation request — '+values.service)+'&body='+encodeURIComponent(requestText);}
+  function review(){const values=data();const root=document.querySelector('#booking-review');root.replaceChildren();for(const [key,label]of Object.entries(labels)){const row=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=values[key]||(['start','end'].includes(key)?'Flexible / to discuss':'Not specified');row.append(dt,dd);root.append(row);}requestText='Hello Augur Tours, please prepare a travel quotation.\n\n'+Object.entries(labels).map(([k,l])=>l+': '+(values[k]||'To discuss')).join('\n')+'\n\nPlease confirm availability, inclusions, total price and booking conditions.';document.querySelector('#booking-send-whatsapp').href='https://wa.me/256779120189?text='+encodeURIComponent(requestText);document.querySelector('#booking-send-email').href='mailto:'+bookingEmail+'?subject='+encodeURIComponent('Travel quotation request — '+values.service)+'&body='+encodeURIComponent(requestText);}
   function show(){panels.forEach((p,i)=>p.hidden=i!==step);steps.forEach((s,i)=>{if(i===step)s.setAttribute('aria-current','step');else s.removeAttribute('aria-current');});back.hidden=step===0;next.hidden=step===2;next.textContent=step===1?'Review my request →':'Continue →';error.textContent='';if(step===2)review();const legend=panels[step].querySelector('legend');legend.tabIndex=-1;legend.focus({preventScroll:true});document.querySelector('.booking-flow').scrollIntoView({behavior:'smooth',block:'start'});}
   form.addEventListener('submit',e=>{e.preventDefault();if(step<2&&validate(step)){step++;show();}});
   back.addEventListener('click',()=>{if(step>0){step--;show();}});

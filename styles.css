@@ -1913,7 +1913,7 @@ body.contact-in-view .assistant-button {
 
 .hotel-hero { background-image: linear-gradient(90deg, rgba(16, 45, 33, 0.94), rgba(16, 45, 33, 0.42)), url("assets/safari/lake-bunyonyi.webp"); }
 .transfer-hero { background-image: linear-gradient(90deg, rgba(16, 45, 33, 0.94), rgba(16, 45, 33, 0.42)), url("assets/safari/vehicle-hire.webp"); }
-.car-hero { background-image: linear-gradient(90deg, rgba(16, 45, 33, 0.94), rgba(16, 45, 33, 0.34)), url("assets/field/augur-safari-vehicle-field.jpg"); }
+.car-hero { background-image: linear-gradient(90deg, rgba(16, 45, 33, 0.94), rgba(16, 45, 33, 0.34)), url("assets/field/augur-safari-vehicle-field.webp"); }
 .packages-hero { background-image: linear-gradient(90deg, rgba(16, 45, 33, 0.94), rgba(16, 45, 33, 0.42)), url("assets/safari/gorilla.webp"); }
 .murchison-package-hero { background-image: linear-gradient(90deg, rgba(16, 45, 33, 0.94), rgba(16, 45, 33, 0.34)), url("assets/packages/murchison-falls.jpg"); }
 .gorilla-package-hero { background-image: linear-gradient(90deg, rgba(18, 48, 38, 0.95), rgba(18, 48, 38, 0.32)), url("assets/safari/gorilla.webp"); }
@@ -4156,13 +4156,13 @@ body.contact-in-view .call-float {
 }
 
 .guide-hero {
-  background-image: linear-gradient(90deg, rgba(10, 36, 25, 0.94), rgba(10, 36, 25, 0.35)), url("assets/destinations/rwenzori-mountains.jpg");
+  background-image: linear-gradient(90deg, rgba(10, 36, 25, 0.94), rgba(10, 36, 25, 0.35)), url("assets/destinations/rwenzori-mountains.webp");
   background-position: center 48%;
 }
 
 .enquiry-hero {
   min-height: 360px;
-  background-image: linear-gradient(90deg, rgba(10, 36, 25, 0.96), rgba(10, 36, 25, 0.52)), url("assets/field/augur-safari-vehicle-field.jpg");
+  background-image: linear-gradient(90deg, rgba(10, 36, 25, 0.96), rgba(10, 36, 25, 0.52)), url("assets/field/augur-safari-vehicle-field.webp");
 }
 
 .trip-builder-layout {

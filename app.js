@@ -41,6 +41,7 @@ const navDropdowns = Array.from(document.querySelectorAll(".nav-dropdown"));
 menuToggle?.addEventListener("click", () => {
   const isOpen = siteNav.classList.toggle("is-open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
 });
 
 navDropdowns.forEach((dropdown) => {
@@ -63,6 +64,7 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
     siteNav?.classList.remove("is-open");
     navDropdowns.forEach((dropdown) => dropdown.classList.remove("is-open"));
     menuToggle?.setAttribute("aria-expanded", "false");
+    menuToggle?.setAttribute("aria-label", "Open navigation");
     navDropdowns.forEach((dropdown) => dropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false"));
   });
 });
@@ -169,7 +171,7 @@ const destinationData = {
     title: "Rwenzori Mountains",
     type: "Mountain Adventure",
     meta: "Uganda | Natural",
-    image: "assets/destinations/rwenzori-mountains.jpg",
+    image: "assets/destinations/rwenzori-mountains.webp",
     copy: "Rwenzori Mountains | Scenic walks | Multi-day treks | Summit expeditions",
     route: "Route note: Best planned through Kasese with timing shaped around trek length, fitness, guides, and accommodation.",
     quote: "Tailored quotation - final price depends on trek length, guide support, accommodation, transport, dates, and group size.",
@@ -310,6 +312,7 @@ let packageHighlightTimeout;
 function focusPackageCard(id) {
   const card = document.querySelector(`[data-package="${id}"]`);
   if (!card) return;
+  if (card.classList.contains("is-filtered-out")) resetPackageFilters();
   packageCards.forEach((item) => item.classList.remove("is-highlighted"));
   card.classList.add("is-highlighted");
   card.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -789,6 +792,9 @@ function updatePackageFilters() {
     const durationMatch = duration === "all" || (card.dataset.duration || "").split(" ").includes(duration);
     const matches = textMatch && countryMatch && activityMatch && durationMatch;
     card.classList.toggle("is-filtered-out", !matches);
+    if (!matches && packageDestinationSelect?.value === card.dataset.package) {
+      packageDestinationSelect.value = "";
+    }
     if (matches) visible += 1;
   });
 
@@ -802,13 +808,14 @@ function updatePackageFilters() {
   control?.addEventListener("change", updatePackageFilters);
 });
 
-packageFilterReset?.addEventListener("click", () => {
+function resetPackageFilters() {
   if (packageSearch) packageSearch.value = "";
   if (packageCountryFilter) packageCountryFilter.value = "all";
   if (packageActivityFilter) packageActivityFilter.value = "all";
   if (packageDurationFilter) packageDurationFilter.value = "all";
   updatePackageFilters();
-});
+}
+packageFilterReset?.addEventListener("click", resetPackageFilters);
 updatePackageFilters();
 
 const bookingEnquiryForm = document.querySelector("#booking-enquiry-form");
