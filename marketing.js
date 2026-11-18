@@ -9,17 +9,7 @@
   const path=location.pathname.replace(/^\//,'').replace(/\.html$/,'').replace(/\/$/,'');
   const tripService=trip=>/murchison/i.test(trip)?'murchison':/queen elizabeth/i.test(trip)?'queen':/bwindi|gorilla/i.test(trip)?'gorilla':'';
   const pageService=pageServices[path]||tripService(requestedTrip)||serviceNames[selectedService]||'general';
-  const directForm=document.querySelector('#augur-direct-form');
-  const fallback=document.querySelector('#augur-form-fallback');
-  if(directForm&&(selectedService||requestedTrip)){
-    const url=new URL(directForm.src);
-    if(selectedService)url.searchParams.set('entry.1651185533',selectedService);
-    if(requestedTrip)url.searchParams.set('entry.1375294032','Trip: '+requestedTrip);
-    directForm.src=url.href;
-    if(fallback){const link=new URL(url.href);link.searchParams.delete('embedded');fallback.href=link.href;}
-    const note=document.querySelector('#enquiry-service-note');
-    if(note)note.textContent=(selectedService?'Your service: '+selectedService+'. ':'')+(requestedTrip?'Your trip: '+requestedTrip+'. ':'')+'Include your dates or month, group size and budget if known. You can edit the details inside the form.';
-  }
+  const enquiryForm=document.querySelector('#professional-booking');
   if(navigator.doNotTrack==='1'||navigator.globalPrivacyControl===true)return;
   const production=location.hostname==='augurtravel.com'||location.hostname==='www.augurtravel.com';
   if(!production)return;
@@ -48,8 +38,8 @@
     fetch('/api/marketing-event',{method:'POST',headers:{'Content-Type':'application/json'},body,keepalive:true,credentials:'omit'}).catch(()=>{});
   }
   record('page_view');
-  if(directForm){
-    if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){record('enquiry_form_view');observer.disconnect();}},{threshold:.1});observer.observe(directForm);}
+  if(enquiryForm){
+    if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){record('enquiry_form_view');observer.disconnect();}},{threshold:.1});observer.observe(enquiryForm);}
     else record('enquiry_form_view');
   }
   document.addEventListener('click',event=>{

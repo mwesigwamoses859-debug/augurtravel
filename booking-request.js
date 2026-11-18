@@ -7,6 +7,13 @@
   const params=new URLSearchParams(location.search);
   const service=params.get('service');if(service&&[...field('service').options].some(o=>o.value===service))field('service').value=service;
   field('trip').value=(params.get('trip')||'').slice(0,180);
+  const quickQuote = document.querySelector('#quick-quote-whatsapp');
+  const enquirySubject = [field('service').value, field('trip').value.trim()].filter(Boolean).join(' — ');
+  if (quickQuote && enquirySubject) {
+    const url = new URL(quickQuote.href);
+    url.searchParams.set('text', 'Hello Augur Tours, please send me a quotation for ' + enquirySubject + '.');
+    quickQuote.href = url.href;
+  }
   const today=new Date();const localDate=[today.getFullYear(),String(today.getMonth()+1).padStart(2,'0'),String(today.getDate()).padStart(2,'0')].join('-');field('start').min=localDate;field('end').min=localDate;
   field('start').addEventListener('change',()=>{field('end').min=field('start').value||localDate;field('end').setCustomValidity('');});
   field('end').addEventListener('change',()=>field('end').setCustomValidity(''));
