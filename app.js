@@ -736,7 +736,7 @@ if (footerBottom && !footerBottom.querySelector(".design-credit")) {
   const designCredit = document.createElement("p");
   designCredit.className = "design-credit";
   designCredit.innerHTML = `
-    <span>Designed by <strong>MosesTechFixSolutions</strong></span>
+    <span>Designed by <a href="https://mosestechfixsolution.com/website-development?utm_source=augurtravel&amp;utm_medium=referral&amp;utm_campaign=tour_operator_demo" target="_blank" rel="noopener"><strong>MosesTechFixSolutions</strong></a></span>
     <span>WhatsApp:
       <a href="https://wa.me/256789218570" target="_blank" rel="noopener">0789 218 570</a>
       <span aria-hidden="true">·</span>
