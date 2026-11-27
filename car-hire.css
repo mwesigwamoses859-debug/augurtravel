@@ -1,0 +1,87 @@
+.augur-inner .car-hero {
+  background-color: #102d21;
+  background-image:
+    linear-gradient(90deg, #102d21 17%, rgba(16, 45, 33, .96) 32%, rgba(16, 45, 33, .78) 45%, transparent 68%),
+    url("assets/car-hire/high-roof-van.webp");
+  background-size: cover, 70% auto;
+  background-position: center, right 54%;
+  background-repeat: no-repeat;
+}
+
+.augur-inner .car-hero > div {
+  max-width: min(46vw, 620px);
+}
+
+.fleet-photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 28px);
+}
+
+.fleet-photos figure {
+  margin: 0;
+}
+
+.fleet-photos a {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.fleet-photos a:focus-visible {
+  outline: 3px solid var(--green-800);
+  outline-offset: 3px;
+}
+
+.fleet-photos img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.fleet-photos figcaption {
+  padding: .65rem 0;
+  font-weight: 700;
+  color: var(--green-950);
+}
+
+#quote-form.service-enquiry {
+  background: linear-gradient(90deg, rgba(12, 34, 25, .95), rgba(12, 34, 25, .75)),
+    url("assets/car-hire/dark-touring-van.webp") center / cover;
+  color: white;
+}
+
+#quote-form.service-enquiry :is(h2, p) {
+  color: white;
+}
+
+#quote-form.service-enquiry .eyebrow {
+  color: var(--gold);
+}
+
+@media (max-width: 780px) {
+  .augur-inner .car-hero {
+    padding-top: clamp(175px, 48vw, 350px);
+    padding-bottom: 2rem;
+    background-image:
+      linear-gradient(to bottom, transparent 22%, rgba(16, 45, 33, .25) 36%, #102d21 62%),
+      url("assets/car-hire/high-roof-van.webp");
+    background-size: cover, 100% auto;
+    background-position: center, center top;
+  }
+
+  .augur-inner .car-hero > div {
+    max-width: 100%;
+  }
+
+  .fleet-photos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .fleet-photos {
+    grid-template-columns: 1fr;
+  }
+}
